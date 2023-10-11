@@ -1,0 +1,612 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[mm]{res} % Use the res.cls style 
+
+\usepackage[margin={0.75in, 0.5in}]{geometry}
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.4in} % Text width of the document   
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft\hoffset\leftline{\huge\bf Kavinga Upul Ekanayaka} % Your name at the top
+\emph{Email}: upul.ekanayaka@acceler.site\\
+\emph{Linkedin}: www.linkedin.com/in/kavinga-upul-ekanayaka/
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+ 
+%\section{CONTACT INFORMATION}  
+
+%\emph{Postal} : kadawalagedara, Thuththiripitigama, Via Kurunegala, Sri Lanka.\\ % Your address
+%\emph{Mobile}: +94 71 648 7689 
+%\emph{Email}: upul.ekanayaka@acceler.net\\
+%\emph{Linkedin}: www.linkedin.com/in/kavinga-upul-ekanayaka-04575820/
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{1 mm}
+\section{SKILLS} 
+
+\textbf{Expertise}
+\begin{quote}
+	\emph{RTL design, High Performance Computing, Parallel Computing, Hardware Acceleration, Machine Learning}
+\end{quote}
+
+\textbf{Programming Languages}
+\begin{quote}
+	\emph{Experienced in C, C++, Java, Python, Verilog, SystemVerilog, VHDL, C\#, Groovy, LaTEX}
+\end{quote}
+
+\textbf{Tools and Frameworks}
+\begin{quote}
+	\emph{Xilinx Vivado/Vitis, Intel Quartus, QuestaSim, CocoTB, OpenCL, Matlab}
+	\end{quote}
+	
+\textbf{Languages}
+\begin{quote}
+	\emph{Sinhala-Native, English-Excellent, Tamil-little}
+\end{quote}
+
+% \textbf{Microcontroller Programming}
+% \begin{quote}
+	% \emph{Experienced in PIC C, Micro C and Assembly}
+	% \end{quote}
+
+% \textbf{Operating Systems}
+% \begin{quote}
+	% \emph{Familiar with windows and Linux environments}
+	% \end{quote} 
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+% PhD information
+%\textbf{Ph.D. candidate in Electronic Engineering} \hfill April 2012 - Present
+%\begin{quote}
+%(Expected in 2017 March)\\
+%\emph{Department of Electronic and Telecommunication Engineering, \\
+%University of Moratuwa, Sri Lanka.}
+%\end{quote}
+
+% BSc information
+\textbf{B.Sc. Engineering (Honors)} \hfill Mar 2007 - Nov 2011
+\begin{quote}
+\emph{Department of Electronic and Telecommunication Engineering, \\
+University of Moratuwa, Sri Lanka.}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item First Class
+\item Overall GPA : 3.87/ 4.20
+\end{itemize}
+
+% A/L information
+%\textbf{G.C.E Advanced Level, Physical Science Stream} \hfill May 2006
+%\begin{quote}
+%\emph{Maliyadeva college, Kurunegala, Sri Lanka.}
+%\end{quote}
+%
+%\begin{itemize} \itemsep -1pt % Reduce space between items
+%\item Country Rank : 20
+%\item District Rank : 03
+%\item Z-score: 2.8793 with \textbf{A} grades in All 3 subjects.
+%\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{WORKING EXPERIENCE}
+
+%acceler
+\textbf{Head of Hardware Acceleration} \hfill Dec 2022 - Present\\
+\textbf{Technology Lead} \hfill Sep 2019 - Nov 2022
+\begin{quote}
+	\emph{ACCELR, Colombo, Sri Lanka \\
+		web: www.accelr.lk}
+\end{quote}
+\begin{itemize} \itemsep -1pt 
+\item Leading an internal study on CNN acceleration for a RISC-V based SoC platform for low power edge devices
+\item Designed and implemented an FPGA accelerator (AWS F1) for the Apache Solr/Lucene search engine as a POC system for a US startup
+\item Utilizing and enhancing the Yahoo stream processor benchmark suit to compile performance numbers for  Apache Spark, Apache Storm and WSO2 stream processor
+\item Recruitment, training and mentoring hardware team members
+\item Customer Engagement on hardware acceleration projects
+
+\end{itemize}
+%bigstream
+\textbf{FPGA design Engineer} \hfill Sep 2019 - Jan 2022
+\begin{quote}
+	\emph{Bigstream, Mountain view, CA, USA\\
+		  web: www.bigstream.co}
+\end{quote}
+\begin{itemize} \itemsep -1pt 
+	\item Held the delivery responsibility of Bigstream Sri Lanka team
+	\item Deployed Bigstream openCL based FPGA accelerated platform (FAP) in AWS F1 platform
+	\item Architected and implemented Bigstream FAP for Intel data center FPGAs
+	\item Developed Rate controller reference RTL design and openCL application for testing and verifying Bigstream FAP using Xilinx Vitis and Intel Quartus design tools
+	\item Carried out a performance analysis of Bigstream FAP on AWS F1 and on-premise servers using spark benchmark tests as a reference
+	\item Developed Xilinx QDMA shell interface for Bigstream FAP
+	\item Implemented multi-FPGA support for Bigstream FAP
+	\item Worked with Systems engineering team for Jenkins based CI-CD pipelines
+\end{itemize}
+%wave
+\textbf{Technical Lead} \hfill Oct 2018 - July 2019\\
+\textbf{Team Lead} \hfill Oct 2016 - Sep 2018\\
+\textbf{Application Engineer} \hfill Oct 2015 - Sep 2016
+\begin{quote}
+	\emph{Wave computing, Campbell, CA, USA\\
+		  web: www.wavecomp.ai}
+\end{quote}
+\begin{itemize} \itemsep -1pt 
+	\item Lead the Sri Lankan team in the implementation of machine learning inference algorithms on Wave DPU using generic building blocks
+	\item Major contributor in the development of `word2vec' machine learning training algorithm on Wave DPU architecture
+	\item word2vec was used as main reference design to test first wave hardware chip which had proven higher performance than CPU counterpart
+	\item Implement the DMA controller for unit blocks in Wave DPU inference architecture
+	\item Design and implement RTL level applications and C++ test benches, reference deigns to test the Wave SDK tool set (simulators/compilers)
+	\item Drive front end simulator from application side with the use of Python scripting
+	\item Provide feedback and strategic plans to SDK tool developers to improve front end and back end wave tools
+	% \item Prepare reference applications to run on emulator/hardware after full functional testing in software
+	\item Debug and report simulator/compiler issues to SDK developers
+	% \item Master in wave SDK application regression suit	
+	\item Involved in recruiting, training and mentoring team members and trainees
+\end{itemize}
+
+%research assistant
+\textbf{Research Assistant} \hfill Apr 2012 - Oct 2015
+\begin{quote}
+	\emph{Department of Electronic and Telecommunication Engineering, \\
+		University of Moratuwa, Sri Lanka.}
+\end{quote}
+
+%internship
+% \textbf{Engineering Intern} \hfill Mar 2010 – Sep 2010
+% \begin{quote}
+% 	\emph{Airport and Aviation Services (Sri Lanka) Limited,\\
+% 		Bandaranaike International Airport, Katunaike, Sri Lanka.}
+% \end{quote}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH SECTION
+%----------------------------------------------------------------------------------------
+\vspace {2 mm}
+\section{RESEARCH} 
+
+% CEP 
+\textbf{Hardware Implementation of a Complex Event Processor} \hfill Apr 2012 - Apr 2013
+\begin{quote}
+	\emph{Research Project}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+	\item A hardware accelerated complex event processor (CEP) platform was designed and implemented on FPGA with reference to WSO2 siddhi software CEP platform
+	\item The design is highly parameterized to enhance the flexibility, scalability and compatibility with the software platform.
+	\item Achieved more than 10x performance than its software counterpart verified using a real world dataset.
+\end{itemize}
+
+% cloud computing
+\textbf{Hardware Acceleration for Cloud computing architectures} \hfill Apr 2013 - Oct 2015
+\begin{quote}
+\emph{Research Project}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item Thorough analysis of cloud computing architecture helped to find out Network virtualization as the major bottleneck
+\item Parallel processing techniques were used to improve the QoS of network virtualization using a hardware switch fabric designed in FPGA
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace {2 mm}
+\section{PUBLICATIONS} 
+
+% international conference
+\textbf{IEEE Conference Paper } \hfill October 2014
+\begin{quote}
+Ekanayaka, K.U.B.; Pasqual, A., ``FPGA based custom accelerator architecture framework for complex event processing," \emph{TENCON 2014 - 2014 IEEE Region 10 Conference} , vol., no., pp.1,6, 22-25 Oct. 2014
+\end{quote}
+ 
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{ACHIEVEMENTS} 
+
+% ipho
+\textbf{International Physics Olympiad} \hfill Jul 2007
+\begin{quote}
+\emph{Isfahan, Iran.}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item Member of the Sri Lankan Team.
+\end{itemize}
+
+% Apho
+\textbf{Asian Physics Olympiad} \hfill Apr 2007
+\begin{quote}
+\emph{Shanghai, China.}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item Member of the Sri Lankan Team.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	INTERNATIONAL EXPOSURE SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{INTERNATIONAL EXPOSURE} 
+
+% % IEEE SC2014
+% \textbf{IEEE Sections congress} \hfill Aug 2014
+% \begin{quote}
+% \emph{Amsterdam, Netherlands.}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item Sri Lankan delegate.
+% \end{itemize}
+
+% % hp discover
+% \textbf{HP Discover conference} \hfill Dec 2013
+% \begin{quote}
+% \emph{Barcelona, Spain.}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item Sri Lankan delegate.
+% \end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	HOUNORS AND AWARDS SECTION
+%---------------------------------------------------------------------------------------- 
+
+\section{HOUNORS AND AWARDS}
+
+%sri lankan physics olympiad
+\textbf{Bronze Medal at Sri Lankan Physics Olympiad} \hfill Apr 2006
+\begin{quote}
+\emph{Institute of Physics, University of Colombo, Sri Lanka.}
+\end{quote}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{2 mm}
+\section{PROJECTS} 
+
+% Connect 6
+\textbf{FPGA implementation of Connect-6 game} \hfill 2012
+\begin{quote}
+\emph{FPGA international competition}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item Hardware accelerated connect-6 game playing algorithm in spartan-6 FPGA platform using Verilog. 
+\item Competed at the International Conference on Field Programmable Technology 2012 - Seoul, South Korea.
+\end{itemize}
+
+
+% FYP 
+\textbf{Final Year Project} \hfill Mar 2011 - Dec 2011
+\begin{quote}
+\emph{PC based open standard Radar display system.}
+\end{quote}
+
+\begin{itemize} \itemsep -1pt % Reduce space between items
+\item Developed an open standard Radar display system for AASL to use with a normal PC
+with Linux platform. Micro-C, Qt Designer and C++ were used as programming tools.
+\item Micro-controller based switching and tunneling unit was designed to acquire data coming from Radar towers and interface with software.
+\end{itemize}
+
+% DSD individual 
+%\textbf{FPGA development of a convolutional encoder and a Viterbi decoder}\\
+%\indent { \hspace{120 mm} Aug 2011} 
+% \begin{quote}
+% \emph{Course project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item Develop a Convolutional encoder and a Viterbi decoder using `verilog' as the HDL and implanted them on a vertex2pro FPGA board as an individual project.
+% \end{itemize}
+
+% DSD group 
+%\textbf{FPGA development of synchronization of input data streams from
+%different clock domains.} \hfill Aug 2011
+% \begin{quote}
+% \emph{Course project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item Develop synchronization of input data streams from different clock domains using verilog as the HDL and implemented it in vertex2pro FPGA development board.
+% \end{itemize}
+
+% SMPS 
+%\textbf{Switch Mode Power Supply design} \hfill Jul 2011
+%\begin{quote}
+%\emph{Course project}
+%\end{quote}
+
+%\begin{itemize} \itemsep -1pt % Reduce space between items
+%\item Design and develop a buck converter as the SMPS design and implemented it in a
+%PCB.
+%\end{itemize}
+
+% AFTN Messenger
+% \textbf{AFTN Messenger} \hfill Mar 2010 - May 2010
+% \begin{quote}
+% \emph{Project was done at AASL, when working as a trainee.}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A terminal messenger software for the windows platform developed with C\# in visual studio 2008 is currently used in the operation by the Airport and Aviation Services (Sri Lanka) Limited.
+% \end{itemize}
+
+% DSP project
+% \textbf{ECG Beat Counter With Noise Rejection} \hfill Feb 2010
+% \begin{quote}
+% \emph{Course Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A Digital Signal Processing project using Matlab programming tool to reject power supply noise level and count the heart beat rate.
+% \end{itemize}
+
+% Intelligent game
+% \textbf{Intelligent Game} \hfill Jan 2010
+% \begin{quote}
+% \emph{Course Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A computer game (an intelligent agent) with only single player mode using the AI algorithms developed using JAVA.
+% \end{itemize}
+
+% Multistage Amplifier
+% \textbf{Multistage Amplifier Design} \hfill Dec 2009
+% \begin{quote}
+% \emph{Course Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A multistage amplifier with 100Hz-100 kHz bandwidth and 20dB to 60dB gain.
+% \end{itemize}
+
+% Active filter
+% \textbf{Active Filter Design} \hfill Sep 2009
+% \begin{quote}
+% \emph{Course Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item An active high pass filter with a cut off frequency 3 kHz which can be used to filter the harmonics band with minimal distortion to obtain a high quality audio output of an active audio cross over.
+% \end{itemize}
+
+% OOWrite text editor
+% \textbf{OOWrite Text Editor} \hfill Apr 2009
+% \begin{quote}
+% \emph{Course Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A text editor which can edit text using various ways in command line format and in user interface format developed using JAVA programming language according to object oriented programming concepts.
+% \end{itemize}
+
+% Fire fighting robot
+% \textbf{Robot Design and Competition 2008} \hfill Oct 2008
+% \begin{quote}
+% \emph{Course Project and Competition}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A mobile robot navigating avoiding the obstacles and capable of identifying and blowing out fire.
+% \item Won the fifth place of the competition.
+% \end{itemize}
+
+% Fan regulator
+% \textbf{Weather Controlled Fan Regulator} \hfill May 2008
+% \begin{quote}
+% \emph{Course (June Term) Project}
+% \end{quote}
+
+% \begin{itemize} \itemsep -1pt % Reduce space between items
+% \item A power saving product which automatically controls the speed of a ceiling fan
+% according to the temperature inside the room.
+% \item Best Level 2 June term project in year 2008.
+% \end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PROFFESSIONAL AFFILIATIONS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{2 mm}
+\section{PROFESSIONAL AFFILIATIONS} 
+
+% IEEE
+\textbf{Member of IEEE} \hfill Since 2009 
+
+% IESL
+% \textbf{Member of IESL} \hfill Since 2010
+
+% Toastmasters
+\textbf{Member of Toastmasters International} \hfill 2014 - 2016
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK SECTION
+%----------------------------------------------------------------------------------------
+\vspace{2 mm}
+\section{LEADERSHIP AND TEAMWORK} 
+
+% DVCON
+\textbf{Sri Lanka Liason Chair} \hfill 2022 - 2023 
+\begin{quote}
+	\emph{Design and Verification Conference (DVCon-India)}
+\end{quote}
+
+% IEEE vTools
+\textbf{Member} \hfill 2018 
+\begin{quote}
+\emph{IEEE MGA vTools Committee}
+\end{quote}
+
+% IEEE Region 10
+\textbf{Chairman} \hfill 2015 
+\begin{quote}
+\emph{IEEE Region 10 (Asia/Pacific) Congress - Colombo, Sri Lanka}
+\end{quote}
+
+% IEEE R10 PAC
+\textbf{Member} \hfill 2023 
+\begin{quote}
+	\emph{IEEE Region 10 (Asia/Pacific) Professional Activities Committee}
+\end{quote}
+
+% IEEE sri lanka section
+\textbf{Assistant Treasurer} \hfill 2015 - 2019
+\begin{quote}
+\emph{IEEE Sri Lanka section}
+\end{quote}
+
+% IEEE sri lanka section
+% \textbf{Educational Activities Chair} \hfill 2016
+% \begin{quote}
+% \emph{IEEE Sri Lanka section}
+% \end{quote}
+
+% Toastmasters
+\textbf{President} \hfill 2015 - 2016 
+\begin{quote}
+\emph{University of Moratuwa Toastmasters club}
+\end{quote}
+
+% IEEE YP
+% \textbf{Chairman} \hfill 2013 - 2014 
+% \begin{quote}
+% \emph{IEEE Young Professionals Sri Lanka}
+% \end{quote}
+
+% IEEE south asia
+% \textbf{Sri Lankan Representative} \hfill 2013 - 2014 
+% \begin{quote}
+% \emph{IEEE Young Professionals South Asia cluster/Region 10}
+% \end{quote}
+
+% IEEE sri lanka section
+%\textbf{Executive Committee Member} \hfill 2014 
+%\begin{quote}
+%\emph{IEEE Sri Lanka section}
+%\end{quote}
+
+% ICIAfS 
+\textbf{Publicity Chair} \hfill 2014 
+\begin{quote}
+\emph{7\textsuperscript{th} IEEE International Conference on Information and Automation for Sustainability (ICIAfS 2014)}
+\end{quote}
+
+% IEEE day ambassador 
+% \textbf{Section Ambassador} \hfill October 2014 
+% \begin{quote}
+% \emph{IEEE Day 2014, Sri Lanka section}
+% \end{quote}
+
+% Toastmasters
+%\textbf{Treasurer} \hfill 2014 - 2015 
+%\begin{quote}
+%\emph{University of Moratuwa Toastmasters club}
+%\end{quote}
+
+% IEEE GOLD
+%\textbf{Vice Chairman} \hfill 2012 - 2013 
+%\begin{quote}
+%\emph{IEEE GOLD Sri Lanka Affinity Group}
+%\end{quote}
+
+% Classical Music Society
+% \textbf{Treasurer} \hfill May 2008 - Jun 2009 
+% \begin{quote}
+% \emph{Classical Music Society, University of Moratuwa.}
+% \end{quote}
+
+% IEEE uom
+%\textbf{Finance committee Chair person} \hfill Aug 2009 - Feb 2010 
+%\begin{quote}
+%\emph{IEEE Student Branch, University of Moratuwa.}
+%\end{quote} 
+
+% uom cricket
+% \textbf{Member of the Cricket team} \hfill Aug 2009 - Feb 2010 
+% \begin{quote}
+% \emph{University of Moratuwa, Sri Lanka.}
+% \end{quote} 
+
+% college cricket
+%\textbf{Member of the Cricket team} \hfill 2001 - 2003 
+%\begin{quote}
+%\emph{Maliyadeva College, Kurunegala, Sri Lanka.}
+%\end{quote} 
+
+%----------------------------------------------------------------------------------------
+%	REFEREES SECTION
+%----------------------------------------------------------------------------------------
+%\section{REFEREES}
+
+% Dr.Suaris
+%\textbf{Dr. Peter Suaris}\\
+%\emph{B.Sc. Eng. (Moratuwa), M.Sc. (Kentucky), Ph.D. (Duke)}\\
+%\emph{Distinguished Engineer at Analog Inference}\\
+%\emph{Email: psuaris@yahoo.com}\\
+
+% Dr. Esbensen
+%\textbf{Dr. Henrik Esbensen}\\
+%\emph{B.Sc. (Aarhus), M.Sc. (Michigan), Ph.D. (Aarhus)}\\
+%\emph{CTO \& Co-Founder, DreamStart Labs }\\
+%\emph{Email	: henrik@dreamstartlabs.com}\\
+
+% Dr. Pasqual
+% \textbf{Dr. Ajith Pasqual}\\
+% \emph{B.Sc. Eng. (Moratuwa), M.Eng. (Tokyo), Ph.D. (Tokyo), MIEEE, MACM}\\
+% \emph{Senior Lecturer- University of Moratuwa, Director/CEO - Paraqum Technologies }\\
+% \emph{Email	: pasqual@ent.mrt.ac.lk}\\
+
+\end{resume}
+\end{document}
