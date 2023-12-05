@@ -171,7 +171,7 @@
 		}
 		\printnameX
 		& 
-		\multirow[c]{3}{*}{{\includegraphics[width=0.3\textwidth]{logo.png}}}\\ 
+		\multirow[c]{3}{*}{{\includegraphics[width=0.3\textwidth]{../assets/logo.png}}}\\ 
 		\printcontactX
 		& \\
 	\end{tabularx}
@@ -233,6 +233,34 @@
 	\begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
+	\end{list}
+	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
+
+\newenvironment{rSubsectionM}[8]{ % 8 parameters: company name, year(s) employed, multiple(job title and location)
+	% \textbf{#1}, \hfill \emph{#2} \\
+	% \emph{\footnotesize Web: \url{#3}}
+	% \smallskip
+	\textbf{#1}, \emph{\small \url{#2}}
+	\smallskip
+	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
+		\\ % Job title and location on a new line
+		\emph{#3} \hfill \textit{#4} % Output job title and location
+	}
+	\smallskip
+	\ifthenelse{\equal{#5}{}}{}{ % If the third parameter is empty, don't output the job title and location line
+		\\ % Job title and location on a new line
+		\emph{#5} \hfill \textit{#6} % Output job title and location
+	}
+	\smallskip
+	\ifthenelse{\equal{#7}{}}{}{ % If the third parameter is empty, don't output the job title and location line
+		\\ % Job title and location on a new line
+		\emph{#7} \hfill \textit{#8} % Output job title and location
+	}
+	\smallskip % Vertical whitespace
+	\begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
+		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+	}{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
