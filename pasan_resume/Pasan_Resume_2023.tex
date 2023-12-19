@@ -1,0 +1,299 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{./../assets/resume} % Use the resume class
+
+% \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{helvet}
+
+
+%------------------------------------------------
+
+\name{Pasan Perera} % Your name to appear at the top
+
+\phone{+94773166850}
+\linkedin{https://www.linkedin.com/in/pasansperera/}
+\email{sales@accelr.net}
+
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Email \\ sales@acceler.net} % Email
+
+\address{WhatsApp \\ +94 (0)77 3166 850} % WhatsApp Number
+
+\address{Linkedin \\ https://www.linkedin.com/in/pasansperera/} % LinkedIn Profile
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% \begin{tabularx}{\textwidth}{
+% 	| >{\raggedright\arraybackslash}X 
+% 	| >{\raggedleft\arraybackslash}X | }
+% 	\hline
+% 	{\huge\bf Kasun Buddhi} \\
+% 	WhatsApp : Linkedin : Email
+	
+% 	& \raisebox{-\totalheight}{\includegraphics[width=0.3\textwidth]{logo.png}} \\
+% 	\hline
+% \end{tabularx} 
+
+% \begin{tabularx}{\textwidth}{ |X|X| } 
+% 	\hline
+% 	cell3 & \multirow{3}{5cm}{Multiple row} \\ 
+% 	cell6 &  \\ 
+% 	cell9 &  \\ 
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{
+% 	 	 >{\raggedright\arraybackslash}X 
+% 	 	 >{\raggedleft\arraybackslash}X  } 
+% 	\smallskip
+% 	{\huge\bf Kasun Buddhi} & 
+% 	\multirow[c]{3}{*}{{\includegraphics[width=0.25\textwidth]{logo.png}}}\\ 
+% 	WhatsApp : Linkedin : Email & \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\def\arraystretch{1.5}
+
+	\begin{tabular}{ l l}
+		\textbf{Expertise} & \emph{ML Inference Acceleration, GPU/FPGA Hardware Acceleration} \\
+		\textbf{Programming Languages} & \emph{C, C++, Python, Java} \\
+            \textbf{Parallel Programming} & \emph{MPI, Pthreads, OpenMP, CUDA, OpenCL} \\
+		\textbf{Tools and Frameworks} & \emph{TVM, PyTorch, OpenCV} \\ 
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\textbf{Sri Lanka Institute of Information Technology} \hfill \textit{2020 - 2023} \\ 
+	B.S. (Hons) Electrical and Electronic Engineering \\
+	% Minor in Linguistics \smallskip \\
+	% Member of Eta Kappa Nu \\
+	% Member of Upsilon Pi Epsilon \\
+	Cumulative  GPA: 3.01/4.0 \\
+	% Status: Second Lower
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Software Engineer}{Nov. 2023 - Present}
+		\item Currently working on an ACCELR R\&D project that aims to build an ML inference accelerator on a RISC-V CPU. TVM will be used to lower the network. As a precursor to this, I implemented a TVM based ML inference pipeline for a generic RISC-V and verified on a QEMU emulator.
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Software Development Intern}{Nov. 2022- Jan. 2023}
+            \item Worked with a team of FPGA developers tasked with building a Solr/Lucene hardware accelerator for a stealth mode US startup.
+            \item Developed and maintained the CocoTB based verification framework used in the project. \ \item Developed Verilog RTL modules based on C++ hardware reference model built by senior engineers.
+            \item Involved in testing, debugging and fixing the C++ reference model and RTL design throughout the period.
+            \item Involved in developing several Python scripts to dump and analyze intermediate data generated by Apache Solr.
+            \item Developed a test tool to perform bench-marking tests to compare vanilla Solr and the FPGA accelerated Solr versions.
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Software Development Intern}{Nov. 2021- Jan. 2022}
+            \item Worked with a team from USA, India and Sri Lanka, building a Hardware Accelerated Computing solution for an open source search engine software library.
+            \item Developed a hardware model for a hash function using C/C++ and integrated with the existing Java code base using JNI.
+            \item Created an OpenCL kernel for the same function to execute on an FPGA using Xilinx Vitis SDK.
+            \item Wrote Python scripts to automate extracting textual data from CSV and PDF files, reformatting and writing to JSON files.
+
+	\end{rSubsectionX}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+{\bf A GPU accelerated ML inference framework for the RPi} \hfill {\em February 2023 - October 2023} \\
+Led a team of three, designing and developing a GPU accelerated machine learning inference framework for the Raspberry Pi SBC. Designed the architecture of the framework and developed an in built GPU accelerated tensor computation library, a catalog of neural network functional blocks such as convolution, batch norm etc., and a GPU kernel compilation and execution pipeline, in Python and C/C++. Also involved in guiding the team technically and peer reviewing the contributions of other team members.
+%------------------------------------------------
+
+{\bf Presenter Tracking Camera} \hfill {\em February 2022 - October 2022} \\
+Led a team of three, designing and developing a low cost video camera for hybrid teaching with presenter movement detection, localization and tracking capability. Designed the system and software architecture for the project and done individual research and development on real time object detection and tracking using classical computer vision techniques and Kalman filters. Involved in developing a major part of the alpha software for the initial prototype written in Python, and reviewing the code of other contributors.
+%------------------------------------------------
+
+{\bf VOLTOI - A voltmeter with a web interface} \hfill {\em May 2022 - June 2022} \\
+Led a group of two, designing and prototyping a voltmeter with a web interface for an educational hybrid laboratory setup. Developed the firmware in C/C++ for the ESP32 development board using FreeRTOS to parallelize the tasks which reads the voltages from analog inputs and serves the data to a static HTML front end using the WebSocket protocol, by following operating systems concepts CPU scheduling, and multiprocessing.
+%------------------------------------------------ 
+
+{\bf Sun Tracking Solar Panel} \hfill {\em April 2022 - June 2022} \\
+Involved in designing and prototyping a double axis sun tracking solar panel using an MSP430 development board and servo motors. Developed the bare-metal firmware stack in C to read multiple ADC inputs and co-developed the firmware for the button mechanism designed to manually rotate the solar panel.
+%------------------------------------------------ 
+
+{\bf Autonomous Wall Following Robot} \hfill {\em August 2021 - September 2021} \\
+Involved in designing and prototyping an autonomous wall following and obstacle avoidance robot using fuzzy control algorithm on a Microchip PIC microcontroller. Developed the bare-metal firmware and software stack in C for the project including the control algorithm while using Hardware in the Loop concepts to test and optimize the algorithm.
+%------------------------------------------------   
+    
+{\bf BJT Audio Amplifier} \hfill {\em August 2021 - September 2021} \\
+Involved in designing an audio amplifier using a 2N2222A Bipolar junction transistor. Designed the PCB layout for the circuit using Autodesk Eagle after initial simulations and prototyping using NI Multisim 14.
+%------------------------------------------------
+    
+{\bf Car Park Management System} \hfill {\em May 2021} \\
+Designed and developed a car park management system in Java using only standard libraries and following fundamental Object Oriented design patterns. The program was developed as a console application with the ability to improve over time.
+%------------------------------------------------
+
+{\bf Queue Length Counter} \hfill {\em May 2021} \\
+Designed and simulated a digital circuit using only logic gates to count the occupied slots 
+and to check the availability of slots in a queue where the number of slots is predefined. 
+Used National Instruments Multisim 14 as the simulation environment. 
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Publications}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Professional Affiliations}
+%
+%	\textbf{Institution of Engineers, Sri Lanka (IESL)} \hfill \textit{Since 2019} \\ 
+%	Status : Student Member \\
+%	Membership No.: S-26740
+%
+%	\textbf{IEEE} \hfill \textit{Since 2019} \\ 
+%	Status : Student Member \\
+%	% Membership No.: xxxxxxxx
+%
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Achievement}
+
+% 	\textbf{1\textsuperscript{st} place - Black Belt Male-Kumite event} \hfill \textit{2016} \\ 
+% 	Gained 1\textsuperscript{st} place at the Black Belt Male-Kumite event organized by Kensho Karate International Sri Lanka Karate Do Federation (approved by the Ministry of Sports).
+
+% 	\textbf{Best mini project for power electronics} \hfill \textit{2017} \\ 
+% 	Best mini project for power electronics at the Department of Electrical and Electronics Engineering, South Eastern University, Sri Lanka.
+
+% 	\textbf{Best student award - SMIDF} \hfill \textit{2009} \\ 
+% 	Best student award for \emph{Computer Hardware} awarded by the SMIDF (Small \& Medium Industrial Development Foundation), Kururnegala.
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{RESEARCH}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Extra Curricular Activities}
+
+% 	\textbf{Member of University Badminton team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Taekwondo team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Media club} \hfill \textit{2014 - 2018}
+
+% \end{rSection}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+% 		Protocols \& APIs & XML, JSON, SOAP, REST \\
+% 		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+% 		Tools & SVN, Vim, Emacs
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
