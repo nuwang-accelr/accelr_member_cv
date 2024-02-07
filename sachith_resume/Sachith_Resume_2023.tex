@@ -128,8 +128,10 @@
 \begin{rSection}{Experience}
 
 	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Electronic Engineer}{Feb 2023 - Present}
+		\item Design of SystemVerilog RTL components with AXI-Stream ports for an FPGA network accelerator for a FinTech application. System consists of a market data feed decoder and order book builder for the low latency FIX-SBE market data feed of the B3 (Brazilian) stock exchange. (ongoing) 
 		\item Design, development and verification of ACCELR memory tester for Xilinx ALVEO FPGAs. Project deliverables include RTL kernels, CocoTB testbenchs and OpenCL application and has been validated on AWS F1. \href{https://github.com/accelr-net/alveo-memory-tester}{GitHub Repo}
-		\item Maintanance of CocoTB based unit and regression tests for an FPGA based search acceleration engine intended as a plug-in replacement for an Apache SOLR-Lucene instance.  
+		\item Development of a set of commonly used reusable RTL components. The project includes commonly used RTL components (memories, FIFOs, etc), UVM test benches and python RTL generation scripts. (ongoing)
+		\item Maintenance of CocoTB based unit and regression tests for an FPGA based search acceleration engine intended as a plug-in replacement for an Apache SOLR-Lucene instance.  
 	\end{rSubsectionX}
 
 	\begin{rSubsectionX}{Softlogic IT}{www.softlogicit.lk}{Electrical Engineer}{Apr 2021 - Jan 2023}
@@ -164,7 +166,10 @@
 \begin{rSection}{Projects}
 
 	\textbf{ACCELR Alveo memory tester} \\
-	Designed and developed a memory tester for Xilinx Alveo cards, that allows a user to verify that all on-board DDR memory is active and accessible via an AXI4 interface (both read and write). Next phase of the project will focus on memory performance testing. The Xilinx Vitis platform was utilized to generate templates for both the RTL kernels and OpenCL application. Subsequent to RTL development, a CocoTB testbench was utilized to verify the RTL kernels in isolation. System level tests were done using the Vitis \& Vivado platforms and the Xilinx simulator. The implemented design was then deployed and verified on an AWS F1 compute instance that houses a single Xilinx Alveo board.
+	Designed and developed a memory tester for Xilinx Alveo cards, that allows a user to verify that all on-board DDR memory is active and accessible via an AXI4 interface (both read and write). Next phase of the project will focus on memory performance testing. The Xilinx Vitis platform was utilized to generate templates for both the RTL kernels and OpenCL application. Subsequent to RTL development, a CocoTB testbench was utilized to verify the RTL kernels in isolation. System level tests were done using the Vitis \& Vivado platforms and the Xilinx simulator. The implemented design was then deployed and verified on an AWS F1 compute instance that houses a single Xilinx Alveo board. \href{https://github.com/accelr-net/alveo-memory-tester}{GitHub Repo}
+
+	\textbf{Packet-based AXI4-Stream agent} \\
+	Assisted in the implementation of a packet-based AXI4-Stream agent (non-UVM) and verification environment by leveraging the free Xilinx AXI4-stream VIP. \href{https://github.com/accelr-net/axis_fifo_unit_test}{GitHub Repo}
 
 	\textbf{SLT data center CCTV} \\
 	Implementation of a CCTV and video analytics system for the SLT (Sri Lanka Telecom) Pitipana data center with capabilities to track a visitor's movements through the entire facility via facial recognition technology.
