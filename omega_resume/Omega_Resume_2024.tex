@@ -1,0 +1,419 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{./../assets/resume} % Use the resume class
+
+% \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{helvet}
+
+
+%------------------------------------------------
+
+\name{Omega Gamage} % Your name to appear at the top
+
+\phone{+94772665131}
+\linkedin{https://www.linkedin.com/in/omegagamage}
+\email{sales@accelr.net}
+
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Email \\ sales@acceler.net} % Email
+
+\address{WhatsApp \\ +94 (0)77 2665 131} % WhatsApp Number
+
+\address{Linkedin \\ https://www.linkedin.com/in/omegagamage/} % LinkedIn Profile
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% \begin{tabularx}{\textwidth}{
+% 	| >{\raggedright\arraybackslash}X
+% 	| >{\raggedleft\arraybackslash}X | }
+% 	\hline
+% 	{\huge\bf Kasun Buddhi} \\
+% 	WhatsApp : Linkedin : Email
+
+% 	& \raisebox{-\totalheight}{\includegraphics[width=0.3\textwidth]{logo.png}} \\
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{ |X|X| }
+% 	\hline
+% 	cell3 & \multirow{3}{5cm}{Multiple row} \\
+% 	cell6 &  \\
+% 	cell9 &  \\
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{
+% 	 	 >{\raggedright\arraybackslash}X
+% 	 	 >{\raggedleft\arraybackslash}X  }
+% 	\smallskip
+% 	{\huge\bf Kasun Buddhi} &
+% 	\multirow[c]{3}{*}{{\includegraphics[width=0.25\textwidth]{logo.png}}}\\
+% 	WhatsApp : Linkedin : Email & \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\def\arraystretch{1.5}
+
+	\begin{tabular}{ l p{10cm}}
+		\textbf{Expertise} & \emph{Parallel programming, Machine Learning, NLP, ML graph compilers and sdk} \\
+		\textbf{Programming Languages} & \emph{C/C++, Python, Groovy, Scala (beginner level)} \\
+		\textbf{Tools and Frameworks} & \emph{TensorFlow, PyTorch, Huggingface, Spark, Matlab \& Simulink, AWS,} \emph{Azure, Latex, Jira, Git, Jenkins} \\
+		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent} \\
+	\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	\textbf{University of Moratuwa, Sri Lanka} \hfill \textit{2014 - 2018} \\
+	B.Sc.Eng (Hons) in Electronic \& Telecommunication Engineering \\
+	% Minor in Linguistics \smallskip \\
+	% Member of Eta Kappa Nu \\
+	% Member of Upsilon Pi Epsilon \\
+	Overall GPA: 4.03/4.2 \\
+	Status: First Class
+        Department Rank: 2(out of 100)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+    \begin{rSubsectionM}{ACCELR}{www.accelr.lk}{Lead Software Engineer}{Apr 2023 - Present}{Senior Software Engineer}{Aug 2019 - Apr 2023}{}{}
+        \item Mentor ACCELR team members on topics related to Computer Vision and NLP.
+	\end{rSubsectionM}
+
+    \begin{rSubsectionX}{Quadric.io}{www.quadric.io}{Consultant - Software Engineer}{Jun 2022 - Feb 2024}
+        \item Was a member of Quadric's application team and was responsible for developing high-performance and parallel computing applications, including neural networks, utilizing Quadric's parallel GPNPU architecture.
+        \item \textit{Transformer-based networks:} Worked with both vision (ViT) and NLP (LLama2) transformer-based networks. Implemented the complete Attention module for these networks, as well as additional modules like RoPE and matrix multipliers specific to transformer networks. Implemented both symmetric and asymmetric quantization versions.
+        \item Worked on CNN network layers, including dilated convolution, to enhance feature extraction capabilities for various applications.
+        \item Implemented classical computer vision operators, such as color converters, and morphological operators like dilation and erosion, as well as filters like the Gaussian filter, to support advanced image processing tasks.
+        \item Utilized ONNX, TVM frameworks, quantization, fixed-point arithmetic, and C++14 meta-programming during work at quadric.io.
+    \end{rSubsectionX}
+
+    \begin{rSubsectionX}{Bigstream Solutions, Inc., United States}{https://www.linkedin.com/company/bigstream/}{Consultant - Software Engineer}{Oct 2019 - June 2021}
+        \item Worked with the Bigstream DevOps team. \hfill {\textit{Dec 2020 - Mar 2022}} \\(Python, Groovy, Shell scripting, Jenkins, AWS, Azure, Docker)
+        \item Worked with Bigstream's software acceleration team. \hfill {\textit{Oct 2019 - Nov 2020}} \\(C++, Scala, shell script)
+    \end{rSubsectionX}
+
+    \begin{rSubsectionX}{Wave Computing, Sri Lanka}{https://www.linkedin.com/company/wave-computing/}{Software Engineer}{Oct 2018 - Jul 2019}
+        \item Wave Computing is a Silicon Valley-based startup developing a massively parallel data-flow architecture using Wave Dataflow Processing Units (DPU) to accelerate machine learning applications. Worked with the SDK team of the company, involved in developing the compiler and the simulator for Wave hardware.\\
+        (Compiler constraint improvement, Compiler metadata processing, Bug fixing, C/C++, assembly level debugging)
+    \end{rSubsectionX}
+
+    \begin{rSubsectionX}{ParaQum Technologies (Pvt) Ltd}{www.paraqum.com}{Electronic Engineer}{Feb 2018 - Sep 2018}
+        \item Worked as a contractor for Wave Computing, USA. I was a member of the SDK compiler team.\\
+        (Compiler constraint improvement, Bug fixing, C/C++, assembly level debugging)
+    \end{rSubsectionX}
+
+    \begin{rSubsectionX}{Research Institute for Nanodevice and Bio Systems, Hiroshima University, Japan}{www.hiroshima-u.ac.jp/en/centers/gakunai/rnbs}{Visiting Student}{Jul 2017 - Aug 2017}
+        \item Completed a Digital IC design and fabrication training program using CMOS technology.
+    \end{rSubsectionX}
+
+    \begin{rSubsectionX}{ParaQum Technologies (Pvt) Ltd}{www.paraqum.com}{Trainee Electronic Engineer}{Aug 2016 - Dec 2016}
+        \item Worked with the Embedded System team as an intern from the University of Moratuwa. Engaged in projects such as a spectrum analyzer and a people counting system.
+    \end{rSubsectionX}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\textbf{Math Word Problem Generation} \textit{\hfill{2023}}\\
+\normalfont{This project focuses on the creation of a multilingual math word problem dataset, and the evaluation of various model architectures for the task of math word problem generation using the dataset. A paper detailing the project's outcomes and methodologies has been written and submitted to a journal, where it is currently under review. (Hugging Face, Pytorch)}
+
+
+\textbf{Machine vision processor for leaf nodes} \textit{\hfill{2017}\\}
+\normalfont{The project's target was to implement an application-specific processor on an FPGA to efficiently execute feature extraction algorithms. Selected application areas are surveillance and autonomous driving. The processor was capable of extract features on video streams up to 1080p@60 fps.(C++, Verilog)}
+
+\textbf{SoC design with simple encryption engine} \textit{\hfill{2017}\\}
+\normalfont{The objective of the project was to design an encryption engine with complete SoC on FPGA. Encryption engine supported additive, multiplicative, and affine cipher techniques.(C++, Verilog)}
+
+\textbf{Spectrum analyzer project } \textit{\hfill{2016}\\}
+\normalfont{In this project, Spectrum Analyzer for broadcasting applications was
+considered. I contributed to verification and debugging
+of the RTL Design. (Verilog,C++, FFT)}
+
+\textbf{People counting project } \textit{\hfill{2016}\\}
+\normalfont{I contributed in the research part of the project to determine suitable sensors for people counting, and algorithms used in people counting}
+
+\textbf{Implementation of processor for basic image processing } \textit{\hfill{2016}\\}
+\normalfont{The processor was designed in an FPGA from the scratch. (Both ISA and Micro-architecture) Supported image processing operations like: convolution, downsampling. (Verilog, C++)}
+
+\textbf{Digital volume controller and balancer with a remote } \textit{\hfill{2016}\\}
+\normalfont{Design a device that can get stereo audio input and amplify it and
+control the volume level and balancing of two channels, and give the
+output to a speaker system. (Microcontroller programming, Power
+Electronics)}
+
+\textbf{Catch me if you can robotic competition } \textit{\hfill{2015}\\}
+\normalfont{Design an autonomous robot car that can chase and evade another
+robot car.The robot communicate with a server computer using Bluetooth
+to get data; data was coordinates and velocities of each robot which
+was provided by an overhead camera to the server computer. (Arduino platform, Bluetooth communication)}
+
+\textbf{Black grain detector } \textit{\hfill{2015}\\}
+\normalfont{Design a system that can detect and remove black grains. The system
+should be completely analog and should not use microcontrollers.}
+
+\textbf{Signal generator} \textit{\hfill{2015}\\}
+\normalfont{Design a device that can generate sine, square and triangular waves
+according to the user input frequency, with functionalities to amplifying, clipping, and dc shifting. (Analog Electronics, Microcontroller programming)}
+
+\textbf{Yagi-Uda antenna } \textit{\hfill{2015}\\}
+\normalfont{Design a Yagi-Uda antenna that can receive a certain frequency range
+belongs to a specific local television broadcaster.}\\
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\normalfont{D. Kumarathunga, \textbf{O. Gamage}, A. Samarasinghe, N. Saranga, R. Rodrigo and A. Pasqual, "VLIW Based Runtime Reconfigurable Machine Vision Coprocessor Architecture for Edge Computing," \textit{2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP)}, New York, NY, USA, 2019, pp. 103-106.}(\href{https://drive.google.com/open?id=166rtUrbnGk3XiRPDkxgzT3OWLazJaMRN}{paper})
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Academic Contributions
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Contributions}
+
+\textbf{Final Year Project Co-Supervisor, University of Moratuwa, Computer Science and Engineering Department} \hfill \textit{July 2023 - Present}\\
+\normalfont{Serving as an industry co-supervisor for a final year project in the NLP field. Collaborating with Dr. Surangika, the main supervisor, to guide a group of three Computer Science and Engineering final year students. This role involves mentoring the project development, providing industry insights, and assisting in research direction}
+
+\end{rSection}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	open science Contributions
+%------
+\begin{rSection}{open science Contributions}
+
+\textbf{Aya Dataset: An Open-Access Collection for Multilingual Instruction Tuning} \hfill \textit{2023}\\
+\normalfont{Contributed as a top 3 overall contributor and the top contributor for the Sinhala language in the creation of the Aya Instruction tune Dataset, a multilingual instruction-following dataset aimed at enhancing natural language processing applications across 114 languages.} (\href{https://txt.cohere.com/aya-multilingual/}{Project Description})
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Honrs & Awards
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Honours \& Awards}
+
+% \textbf{Professor O.P Kulashethra Award} \textit{\hfill{2018}}\\
+% Best Academic Performance (Semester 3 to 8), University of Moratuwa.
+
+% \textbf{Sri Lanka Telecom Scholarship} \textit{\hfill{2017}}\\
+% Best Academic Performance (Semester 5), University of Moratuwa.
+
+% \textbf{Sri Lanka Telecom Scholarship} \textit{\hfill{2017}}\\
+% Best Academic Performance (Semester 3, 4, 5), University of Moratuwa.
+
+% \textbf{IEEE Signal Processing Cup 2017} \textit{\hfill{2017}}\\
+% Real-Time Beat Tracking Challenge, Represented University of Moratuwa, was among final 20 (\href{https://drive.google.com/open?id=1AQORq-RZQ9vv0DJUWNyZjIlbygpgZpK3}{paper}), IEEE Signal Processing Society.
+
+% \textbf{Dean’s List} \textit{\hfill{2014 - 2017}}\\
+% Recognized in all academic semesters, University of Moratuwa.
+
+% \textbf{Mahapola Higher Education Merit Scholarship} \textit{\hfill{2014 - 2017}}\\
+% Government of Sri Lanka.
+
+% \textbf{IEEEXtreme Programming Competition 9.0} \textit{\hfill{2015}}\\
+% National Rank 40, University of Moratuwa.
+
+% \textbf{Sri Lanka Mathematics Competition} \textit{\hfill{2012}}\\
+% 17\textsuperscript{th} place, Sri Lanka Olympiad Mathematics Foundation.
+
+% \textbf{Inter School Science Quiz Competition} \textit{\hfill{2012}}\\
+% 1\textsuperscript{st} place, Royal College Colombo.
+
+% \textbf{Inter School Mathematics Quiz} \textit{\hfill{2012}}\\
+% 2\textsuperscript{nd} place, Visaka Vidyalaya Colombo.
+
+% \textbf{Australian National Chemistry Quiz} \textit{\hfill{2011}}\\
+% 2\textsuperscript{nd} place, Royal Australian Chemical Institute.
+
+% \end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	FURTHER EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Further Education}
+
+\textbf{Reinforcement Learning from Human Feedback} \textit{\hfill{2023}}\\
+Completed at deeplearning.ai. Course details available \href{https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feedback/}{{\textit{here}}}.
+
+\textbf{Fine-Tuning Large Language Models} \textit{\hfill{2023}}\\
+Completed at deeplearning.ai. Course details available \href{https://www.deeplearning.ai/short-courses/finetuning-large-language-models/}{{\textit{here}}}.
+
+\textbf{Natural Language Processing Specialization} \textit{\hfill{2021}}\\
+Completed at deeplearning.ai via Coursera. \href{https://www.coursera.org/account/accomplishments/specialization/7SLFW68RURSM}{{\textit{(Credential)}}}
+
+\textbf{Deep Learning Specialization} \textit{\hfill{2020}}\\
+Completed at deeplearning.ai via Coursera. \href{https://www.coursera.org/account/accomplishments/specialization/MPFQGA5XW7YA}{{\textit{(Credential)}}}
+
+\textbf{TensorFlow in Practice Specialization} \textit{\hfill{2020}}\\
+Completed at deeplearning.ai via Coursera. \href{https://www.coursera.org/account/accomplishments/specialization/ZBXQR5GS6HGZ}{{\textit{(Credential)}}}
+
+\end{rSection}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Professional Affiliations}
+
+% 	\textbf{Institution of Engineers, Sri Lanka (IESL)} \hfill \textit{Since 2019} \\
+% 	Status : Student Member \\
+% 	Membership No.: S-26740
+
+% 	\textbf{IEEE} \hfill \textit{Since 2019} \\
+% 	Status : Student Member \\
+% 	% Membership No.: xxxxxxxx
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Achievement}
+
+% 	\textbf{1\textsuperscript{st} place - Black Belt Male-Kumite event} \hfill \textit{2016} \\
+% 	Gained 1\textsuperscript{st} place at the Black Belt Male-Kumite event organized by Kensho Karate International Sri Lanka Karate Do Federation (approved by the Ministry of Sports).
+
+% 	\textbf{Best mini project for power electronics} \hfill \textit{2017} \\
+% 	Best mini project for power electronics at the Department of Electrical and Electronics Engineering, South Eastern University, Sri Lanka.
+
+% 	\textbf{Best student award - SMIDF} \hfill \textit{2009} \\
+% 	Best student award for \emph{Computer Hardware} awarded by the SMIDF (Small \& Medium Industrial Development Foundation), Kururnegala.
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{RESEARCH}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Extra Curricular Activities}
+
+% 	\textbf{Member of University Badminton team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Taekwondo team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Media club} \hfill \textit{2014 - 2018}
+
+% \end{rSection}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+% 		Protocols \& APIs & XML, JSON, SOAP, REST \\
+% 		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+% 		Tools & SVN, Vim, Emacs
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -22,7 +22,7 @@
 %	CLASS CONFIGURATION
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{resume}[2022/12/17 v3.0 Resume class]
+\ProvidesClass{resume1}[2022/12/17 v3.0 Resume class]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}} % Pass through any options to the base class
 \ProcessOptions\relax % Process given options
@@ -237,50 +237,21 @@
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
 
-\newenvironment{rSubsectionXX}[4]{ % 4 parameters: company name, year(s) employed, job title and location
+\newenvironment{rSubsectionSmallX}[2]{ % 2 parameters: year(s) employed, job title
 	% \textbf{#1}, \hfill \emph{#2} \\
 	% \emph{\footnotesize Web: \url{#3}}
 	% \smallskip
-	\textbf{#1}, \emph{\small \url{#2}}
- 	\smallskip
-	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\emph{#3} \hfill \textit{#4} % Output job title and location
-	}
+	% \textbf{#1}, \emph{\small \url{#2}}
+ 	% \smallskip
+	% \ifthenelse{\equal{#1}{}}{}{ % If the third parameter is empty, don't output the job title and location line
+	% 	\\ % Job title and location on a new line
+	% 	\emph{#1} \hfill \textit{#2} % Output job title and location
+	% }
+	\emph{#1} \hfill \textit{#2} % Output job title and location
 	\smallskip % Vertical whitespace
-	\ifthenelse{\equal{list}{}}{} {
 	\begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
-	\end{list}
-}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
-}
-
-\newenvironment{rSubsectionM}[8]{ % 8 parameters: company name, year(s) employed, multiple(job title and location)
-	% \textbf{#1}, \hfill \emph{#2} \\
-	% \emph{\footnotesize Web: \url{#3}}
-	% \smallskip
-	\textbf{#1}, \emph{\small \url{#2}}
-	\smallskip
-	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\emph{#3} \hfill \textit{#4} % Output job title and location
-	}
-	\smallskip
-	\ifthenelse{\equal{#5}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\emph{#5} \hfill \textit{#6} % Output job title and location
-	}
-	\smallskip
-	\ifthenelse{\equal{#7}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\emph{#7} \hfill \textit{#8} % Output job title and location
-	}
-	\smallskip % Vertical whitespace
-	\begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
-	}{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
 }
