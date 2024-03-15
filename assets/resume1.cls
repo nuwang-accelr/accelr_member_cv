@@ -171,7 +171,7 @@
 		}
 		\printnameX
 		& 
-		\multirow[c]{3}{*}{{\includegraphics[width=0.3\textwidth]{../assets/logo.png}}}\\ 
+		\multirow[c]{3}{*}{{\includegraphics[width=0.3\textwidth]{./assets/logo.png}}}\\ 
 		\printcontactX
 		& \\
 	\end{tabularx}
