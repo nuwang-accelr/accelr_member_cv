@@ -32,20 +32,20 @@
 %	NAME SECTION
 %----------------------------------------------------------------------------------------
 
-\name{Upul Ekanayaka} % Your name to appear at the top
+\name{Aruna Premachandra} % Your name to appear at the top
 
 \phone{+94773166850}
-\linkedin{https://www.linkedin.com/in/kavinga-upul-ekanayaka/}
+\linkedin{https://www.linkedin.com/in/aruna-premachandra-28ba0588/}
 \email{sales@accelr.net}
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
-\address{Email \\ sales@acceler.net} % Email
+% \address{Email \\ sales@acceler.net} % Email
 
-\address{WhatsApp \\ +94 (0)71 6487 689} % WhatsApp Number
+% \address{WhatsApp \\ +94 (0)71 6487 689} % WhatsApp Number
 
-\address{Linkedin \\ https://www.linkedin.com/in/kavinga-upul-ekanayaka/} % LinkedIn Profile
+% \address{Linkedin \\ https://www.linkedin.com/in/kavinga-upul-ekanayaka/} % LinkedIn Profile
 
 %------------------------------------------------
 
@@ -59,10 +59,10 @@
 	\def\arraystretch{1.5}
 	
 	\begin{tabular}{p{2.0in} p{4.5in}}
-		\textbf{Expertise} & \emph{RTL design, High Performance Computing, Parallel Computing, Hardware Acceleration, Machine Learning} \\
-		\textbf{Programming Languages} & \emph{Verilog, SystemVerilog, VHDL, Python, C, C++, Java, C\#, Groovy, LaTEX} \\
-		\textbf{Tools and Frameworks} & \emph{Xilinx Vivado \& Vitis, Intel Quartus, QuestaSim, CocoTB, UVM, OpenCL, Matlab} \\ 
-		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent, Tamil-little} \\
+		\textbf{Expertise} & \emph{RTL design, functional/GUI validation, Static Verification, Simulation, Emulation, Low Power in ASIC} \\
+		\textbf{Programming Languages} & \emph{Verilog, SystemVerilog, VHDL, UPF, Perl, Java, C} \\
+		\textbf{Tools and Frameworks} & \emph{VC Static, VCS, Formality, Xilinx Vivado, Matlab} \\ 
+		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent} \\
 	\end{tabular}
 	
 \end{rSection}
@@ -73,9 +73,9 @@
 
 \begin{rSection}{Education}
 	
-	\textbf{University of Moratuwa, Sri Lanka} \hfill \textit{Mar 2007 - Dec 2011} \\ 
-	B.Sc (Hons) in Electronic \& Telecommunication Engineering \\
-	Status : First Class (GPA : 3.87 / 4.20)
+	\textbf{University of Peradeniya, Sri Lanka} \hfill \textit{Oct 2016} \\ 
+	B.Sc (Hons) in Electrical \& Electronic Engineering \\
+	% Status : First Class (GPA : 3.87 / 4.20)
 	
 \end{rSection}
 
@@ -84,102 +84,85 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-	%accelr
-	\begin{rSubsectionM}{ACCELR}{www.accelr.lk}{Head of Hardware Acceleration}{Dec 2022 - Present}{Technology Lead}{Sep 2019 - Nov 2022}{}{}
-		\item Leading the integration of a reconfigurable co-processor into RISC-V architecture using MARSS-RISCV, a C-based simulation framework, assessing system performance and efficiency through model applications
-		\item Extensive study on RISCV weak memory ordering (RVWMO), caching, virtual memory systems to get insights for architectural design optimization
-		\item Leading an internal study on CNN acceleration for a RISC-V based SoC platform for low power edge devices
-		\item Designed and implemented an FPGA accelerator (AWS F1) for the Apache Solr/Lucene search engine as a POC system for a US startup
-		\item Utilizing and enhancing the Yahoo stream processor benchmark suit to compile performance numbers for  Apache Spark, Apache Storm and WSO2 stream processor
-		\item Recruitment, training and mentoring hardware team members
-		\item Customer Engagement on hardware acceleration projects
-	\end{rSubsectionM}
-	%bigstream
-	\begin{rSubsectionX}{Bigstream}{www.bigstream.co}{FPGA design Engineer}{Sep 2019 - Jan 2022}
-		\item Held the delivery responsibility of Bigstream Sri Lanka team
-		\item Deployed Bigstream openCL based FPGA accelerated platform (FAP) in AWS F1 platform
-		\item Architected and implemented Bigstream FAP for Intel data center FPGAs
-		\item Developed Rate controller reference RTL design and openCL application for testing and verifying Bigstream FAP using Xilinx Vitis and Intel Quartus design tools
-		\item Carried out a performance analysis of Bigstream FAP on AWS F1 and on-premise servers using spark benchmark tests as a reference
-		\item Developed Xilinx QDMA shell interface for Bigstream FAP
-		\item Implemented multi-FPGA support for Bigstream FAP
-		\item Worked with Systems engineering team for Jenkins based CI-CD pipelines
+	%X-EPIC
+	\begin{rSubsectionX}{X-EPIC}{www.x-epic.com}{Senior Product Engineer Level 2}{Oct 2023 - Jul 2024}
+		\item Product Validation Owner of the Formal Verification Tool (Equivalency checker) GalaxEC.
+		\item Conducted validation of other EDA tools: vSyn (logic synthesizer), HuaPro (prototyping System), GalaxSim/FusionDebug (simulation and debug tool)
+		\item Conducted extensive validation of the Black Parrot SoC design using simulation and emulation platforms, ensuring functional correctness and robustness.
+		\item Performed thorough validation of the OpenPiton SoC design, utilizing equivalence checkers to maintain consistency across different development stages.
+		\item Developed a benchmark regression framework from the scratch, integrating multiple synthesizers and equivalence checkers to automate and enhance the design verification process.
 	\end{rSubsectionX}
-	%wavecomputing
-	\begin{rSubsectionM}{Wave computing}{www.wavecomp.ai}{Technical Lead}{Oct 2018 - July 2019}{Team Lead}{Oct 2016 - Sep 2018}{Application Engineer}{Oct 2015 - Sep 2016}
-		\item Lead the Sri Lankan team in the implementation of machine learning inference algorithms on Wave DPU using generic building blocks
-		\item Major contributor in the development of `word2vec' machine learning training algorithm on Wave DPU architecture
-		\item word2vec was used as main reference design to test first wave hardware chip which had proven higher performance than CPU counterpart
-		\item Implement the DMA controller for unit blocks in Wave DPU inference architecture
-		\item Design and implement RTL level applications and C++ test benches, reference deigns to test the Wave SDK tool set (simulators/compilers)
-		\item Drive front end simulator from application side with the use of Python scripting
-		\item Provide feedback and strategic plans to SDK tool developers to improve front end and back end wave tools
-		\item Debug and report simulator/compiler issues to SDK developers
-		\item Involved in recruiting, training and mentoring team members and trainees
-	\end{rSubsectionM}
-	%research assistant
-	\begin{rSubsectionSimpleX}{University of Moratuwa}{ent.uom.lk}{Research Assistant}{Apr 2012 - Oct 2015}
-	\end{rSubsectionSimpleX}
-	
+	%Synopsys
+	\begin{rSubsectionX}{Synopsys}{www.synopsys.com}{Senior Application Engineer (PV)}{Nov 2016 - Oct 2023}
+		\item Conducted validation for EDA verification tools: VC Static Low Power, VC Static Lint, Formality, VCS and Verdi.
+		\item Machine Learning for Static Verification: Led the development and deployment of a machine learning feature for static verification, from specifications to customer delivery, enhancing debugging and root cause analysis.
+		\item Signoff Abstract Model: Led the development and deployment of the "Signoff Abstract Model" feature, improving runtime efficiency at design signoff from Static Verification.
+		\item Logic Optimization Techniques: Owner of delivering a feature for applying logic optimization techniques early in the SoC design process, suggesting design optimizations during Lint checking.
+		\item Collaborated with client engineering teams globally for new feature introducing, onsite product deployments, testing and customer training. 
+		\item Coordinated release management with multiple product teams across verification tools. 
+		\item Maintained regression test suites and wrote automation scripts for effective bug detecting.
+		\item Created and reviewed comprehensive test plans and test cases.
+		\item Reviewed specifications and user guides to ensure customer requirements were met and to ensure industrial documentation guidelines are met.
+	\end{rSubsectionX}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Research}
-	% CEP 
-	\textbf{Hardware Implementation of a Complex Event Processor} \hfill \textit{Apr 2012 - Apr 2013}\\
-	A hardware accelerated complex event processor (CEP) platform was designed and implemented on FPGA with reference to WSO2 siddhi software CEP platform.
-	The design is highly parameterized to enhance the flexibility, scalability and compatibility with the software platform.
-	Achieved more than 10x performance than its software counterpart verified using a real world dataset.
+% \begin{rSection}{Research}
+% 	% CEP 
+% 	\textbf{Hardware Implementation of a Complex Event Processor} \hfill \textit{Apr 2012 - Apr 2013}\\
+% 	A hardware accelerated complex event processor (CEP) platform was designed and implemented on FPGA with reference to WSO2 siddhi software CEP platform.
+% 	The design is highly parameterized to enhance the flexibility, scalability and compatibility with the software platform.
+% 	Achieved more than 10x performance than its software counterpart verified using a real world dataset.
 
 	
-	% cloud computing
-	\textbf{Hardware Acceleration for Cloud computing architectures} \hfill \textit{Apr 2013 - Oct 2015}\\
-	Thorough analysis of cloud computing architecture helped to find out Network virtualization as the major bottleneck.
-	Parallel processing techniques were used to improve the QoS of network virtualization using a hardware switch fabric designed in FPGA
+% 	% cloud computing
+% 	\textbf{Hardware Acceleration for Cloud computing architectures} \hfill \textit{Apr 2013 - Oct 2015}\\
+% 	Thorough analysis of cloud computing architecture helped to find out Network virtualization as the major bottleneck.
+% 	Parallel processing techniques were used to improve the QoS of network virtualization using a hardware switch fabric designed in FPGA
 
 	
-\end{rSection}
+% \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATION SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Publications}
+% \begin{rSection}{Publications}
 
-	% international conference
-	\textbf{IEEE Conference Paper } \hfill  \textit{October 2014}\\
-	%\begin{quote}
-	Ekanayaka, K.U.B.; Pasqual, A., ``FPGA based custom accelerator architecture framework for complex event processing," \emph{TENCON 2014 - 2014 IEEE Region 10 Conference} , vol., no., pp.1,6, 22-25 Oct. 2014
-	%\end{quote}
+% 	% international conference
+% 	\textbf{IEEE Conference Paper } \hfill  \textit{October 2014}\\
+% 	%\begin{quote}
+% 	Ekanayaka, K.U.B.; Pasqual, A., ``FPGA based custom accelerator architecture framework for complex event processing," \emph{TENCON 2014 - 2014 IEEE Region 10 Conference} , vol., no., pp.1,6, 22-25 Oct. 2014
+% 	%\end{quote}
 
-\end{rSection}
+% \end{rSection}
  
 %----------------------------------------------------------------------------------------
 %	ACHIEVEMENTS SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Achievements}
+% \begin{rSection}{Achievements}
 
-	% ipho
-	\textbf{International Physics Olympiad} \hfill \textit{Jul 2007}\\
-	Member of the Sri Lanka team at IPHO, Isfahan, Iran.
+% 	% ipho
+% 	\textbf{International Physics Olympiad} \hfill \textit{Jul 2007}\\
+% 	Member of the Sri Lanka team at IPHO, Isfahan, Iran.
 
-	% Apho
-	\textbf{Asian Physics Olympiad} \hfill \textit{Apr 2007}\\
-	Member of the Sri Lanka team at APHO, Shanghai, China.
-	\\
-	\\
-	\\
+% 	% Apho
+% 	\textbf{Asian Physics Olympiad} \hfill \textit{Apr 2007}\\
+% 	Member of the Sri Lanka team at APHO, Shanghai, China.
+% 	\\
+% 	\\
+% 	\\
 
-\end{rSection}
+% \end{rSection}
 %----------------------------------------------------------------------------------------
 %	HOUNORS AND AWARDS SECTION
 %---------------------------------------------------------------------------------------- 
 \begin{rSection}{Honors and Awards}
 
 	%sri lankan physics olympiad
-	\textbf{Bronze Medal at Sri Lankan Physics Olympiad} \hfill \textit{Apr 2006}\\
-	Achieved a bronze medal at SLPHO organized by Institute of Physics, University of Colombo, Sri Lanka.
+	\textbf{Synopsys “Above and Beyond Award”} \hfill \textit{2022}\\
+	Exceptional performance in product validation
 
 
 \end{rSection}
@@ -189,17 +172,13 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 
-	% Connect 6
-	\textbf{FPGA implementation of Connect-6 game} \hfill \textit{2012}\\
-	Hardware accelerated connect-6 game playing algorithm in spartan-6 FPGA platform using Verilog. 
-	Competed at the International Conference on Field Programmable Technology 2012 - Seoul, South Korea.
+	
+	\textbf{Surge protecting system for set-top box and router} \hfill \textit{2016}\\
+	Designed a surge protecting system for set-top box and router in Sri Lanka Telecom customer premises telephone network.
 
-	% FYP 
-	\textbf{PC based open standard Radar display system} \hfill \textit{Mar 2011 - Dec 2011}\\
-	Final Year Project of B.Sc. degree program.
-	Developed an open standard Radar display system for AASL to use with a normal PC
-	with Linux platform. Micro-C, Qt Designer and C++ were used as programming tools.
-	Micro-controller based switching and tunneling unit was designed to acquire data coming from Radar towers and interface with software.
+	\textbf{Remote monitoring system to monitor flow rate of a canal} \hfill \textit{2016}\\
+
+	\textbf{Stage Light System using micro-controllers} \hfill \textit{2016}\\
 
 \end{rSection}
 
@@ -207,16 +186,9 @@
 %	PROFFESSIONAL AFFILIATIONS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Professional Affiliations}
-	% IEEE
-	\textbf{Institute of Electrical and Electronics Engineers (IEEE)} \hfill \textit{Since 2009}\\
-	Status : Member
-	
 	% IESL
-	% \textbf{Member of IESL} \hfill Since 2010
-	
-	% Toastmasters
-	\textbf{Toastmasters International} \hfill \textit{2014 - 2016}\\
-	Status : Member
+	\textbf{Institute of Engineers Sri Lanka (IESL)} \hfill \textit{Since 2016}\\
+	Status : Associate Member
 	
 \end{rSection}
 
@@ -226,36 +198,11 @@
 
 \begin{rSection}{Leadership and Teamwork}
 
-% DVCON
-\textbf{Sri Lanka Liason Chair} \hfill \textit{2022 - 2023} \\
-Design and Verification Conference (DVCon-India)
+\textbf{President} \hfill \textit{2016} \\
+Electrical \& Electronic Engineering Society, University of Peradeniya.
 
-
-% IEEE vTools
-\textbf{Member} \hfill \textit{2018} \\
-IEEE MGA vTools Committee
-
-
-% IEEE Region 10
-\textbf{Chairman} \hfill \textit{2015} \\
-IEEE Region 10 (Asia/Pacific) Congress - Colombo, Sri Lanka
-
-
-% IEEE R10 PAC
-\textbf{Member} \hfill \textit{2023} \\
-IEEE Region 10 (Asia/Pacific) Professional Activities Committee
-
-% IEEE sri lanka section
-\textbf{Assistant Treasurer} \hfill \textit{2015 - 2019}\\
-IEEE Sri Lanka section
-
-% Toastmasters
-\textbf{President} \hfill \textit{2015 - 2016} \\
-University of Moratuwa Toastmasters club
-
-% ICIAfS 
-\textbf{Publicity Chair} \hfill \textit{2014} \\
-7\textsuperscript{th} IEEE International Conference on Information and Automation for Sustainability (ICIAfS)
+\textbf{Organizing Committee} \hfill \textit{2016} \\
+‘Arunella' social welfare project - Engineering Students Union, Faculty of Engineering, University of Peradeniya.
 
 \end{rSection}
 
