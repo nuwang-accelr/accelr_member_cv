@@ -1,0 +1,277 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{./assets/resume} % Use the resume class
+
+% \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{helvet}
+\usepackage{color, soul}
+
+
+%------------------------------------------------
+
+\name{Malsha Fernando} % Your name to appear at the top
+
+\phone{+94773166850}
+\linkedin{https://www.linkedin.com/in/malsha-pinibidu-fernando}
+\email{sales@accelr.net}
+
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Email \\ sales@acceler.net} % Email
+
+\address{WhatsApp \\ +94 (0)77 3166 850} % WhatsApp Number
+
+\address{Linkedin \\ https://www.linkedin.com/in/malsha-pinibidu-fernando} % LinkedIn Profile
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% \begin{tabularx}{\textwidth}{
+% 	| >{\raggedright\arraybackslash}X 
+% 	| >{\raggedleft\arraybackslash}X | }
+% 	\hline
+% 	{\huge\bf Kasun Buddhi} \\
+% 	WhatsApp : Linkedin : Email
+	
+% 	& \raisebox{-\totalheight}{\includegraphics[width=0.3\textwidth]{logo.png}} \\
+% 	\hline
+% \end{tabularx} 
+
+% \begin{tabularx}{\textwidth}{ |X|X| } 
+% 	\hline
+% 	cell3 & \multirow{3}{5cm}{Multiple row} \\ 
+% 	cell6 &  \\ 
+% 	cell9 &  \\ 
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{
+% 	 	 >{\raggedright\arraybackslash}X 
+% 	 	 >{\raggedleft\arraybackslash}X  } 
+% 	\smallskip
+% 	{\huge\bf Kasun Buddhi} & 
+% 	\multirow[c]{3}{*}{{\includegraphics[width=0.25\textwidth]{logo.png}}}\\ 
+% 	WhatsApp : Linkedin : Email & \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\def\arraystretch{1.5}
+
+	\begin{tabular}{ l l}
+		\textbf{Expertise} & \emph{RTL/Digital Design, ML \& Deep Learning, Embedded Systems} \\
+		\textbf{Programming Languages} & \emph{C++, C, Verilog, Python, R, SQL} \\
+		\textbf{Tools and Frameworks} & \emph{Xilinx Vivado, Matlab \& Simulink, LabVIEW, MySQL} \\ 
+		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent} \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\textbf{University of Sri Jayewardenepura, Sri Lanka} \hfill \textit{2018 - 2022} \\ 
+	B.S. (Hons) Electrical \& Electronic Engineering \\
+	Minor in Telecommunication Engineering \smallskip \\
+	% Member of Eta Kappa Nu \\
+	% Member of Upsilon Pi Epsilon \\
+	Overall GPA: 3.22/4.0 \\
+	Status: Second Class Honours
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{software Engineer}{Nov 2022 - Present}
+		\item Conducting a study on the IPC efficiency in using the RISC-V compression instruction for network packet forwarding applications. Experiments are being carried out using the marss-riscv : micro-architectural system simulator for RISC-V. Our intent here is to validate the claims made in the  research paper titled "A Compression Instruction Set Design based on RISC-V for Network Packet Forwarding" by researchers from the National University of Defense Technology, Changsha, China. \href{https://iopscience.iop.org/article/10.1088/1742-6596/1026/1/012001/pdf}{paper} 
+		\item Extensive study of various compression algorithms, including huffman coding, for demanding applications in text, image, audio, and video compression.
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{Analog Inference}{www.analog-inference.com}{Engineering Consultant}{Nov 2022 - Present}
+		\item member of the Analog Inference back-end software development team primarily responsible for mapping and optimizing neural networks on the AI data flow accelerator hardware.
+        \item Responsible for optimizing CNNs such as Yolo, Resnet, and FCN for Analog Inference hardware. 
+        \item Gained extensive experience on the low level and high level hardware simulators and runtime environment.
+        \item Carried out mappings of quantized neural network models to fit Analog Inference data flow hardware architecture while addressing memory constraints and optimizing for maximum throughput.
+        \item Developed software tools for post-silicon validation (PSV) of the Analog Inference chip, including testing and evaluation
+        \item Involved in development of "spreadsheet-automated mapper" software tool to optimize models and detect anomalies and violations in the neural network mappings.
+	\end{rSubsectionX}
+
+	\pagebreak
+
+	\begin{rSubsectionX}{Huawei Technologies, SL}{www.huawei.com}{Intern - Electronic Engineer}{Nov 2021 - May 2022}
+		\item Conducted a PoC for the Road Developed Authority (RDA) - central expressway CCTV project. This entailed the testing personal and vehicle image processing algorithms such as facial recognition and loitering detection.
+		\item Engaged with customers on WLAN planning projects, providing technical support and solutions. 
+		\item Presented emerging trends in Internet of Things (IoT) at the Mini MWC global event, showcasing Huawei's innovations in the field.
+	\end{rSubsectionX}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+	\textbf{Efficient hardware architecture for Reinforcement Learning} \\
+	Final Year Project of B.Sc. degree program. The primary goal of this project is to design and implement a novel efficient hardware architecture for reinforcement learning - i.e. the Q learning algorithm - by optimizing the tradeoff between power consumption, throughput, and silicon area. Designed using Verilog HDL and implemented on Artix 7 FPGA. Results were obtained using Vivado 2019.1 EDA tool with verification support of MATLAB simulink via a Vivado system generator for DSP.
+
+	\textbf{Rehabilitation support wheelchair} \\
+	Designed a prototype robotic wheelchair with an adaptive robotic arm for patients undergoing rehabilitation, incorporating features to measure vital parameters such as pulse rate, oxygen saturation, and blood pressure.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Publications}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Affiliations}
+
+	\textbf{Institution of Engineers, Sri Lanka (IESL)} \hfill \hl{\textit{Since 2023}} \\ 
+	Status : Associate Member %\\
+	% Membership No.: AM-30835
+
+	% \textbf{Engineering Council Sri Lanka (ECSL)} \hfill \hl{\textit{Since 20??}} \\ 
+	% Status : Associate Engineer (AEng) %\\
+	% \hl{Shall we remove this??}
+	% % Membership No.: AM-30835
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Certificates \& Achievements}
+
+	\textbf{Winner, Huawei ICT Competition - Network \& Cloud track} \hfill \textit{2022} \\ 
+	Went on to represented Sri Lanka at the Huawei ICT Competition 2020 APAC Regional Finals \\
+	
+	\textbf{4\textsuperscript{th} place - Robotics and Embedded Systems Category - Innovate Sri Lanka Exhibition \& Competition} \hfill \textit{2019} \\ 
+	Developed a moveable CNC writer and won 4th place at the competition \\
+
+	\textbf{HCIA Video Conference Engineering - Huawei Certification} \hfill \textit{2009} \\ 
+	Valid through 2025
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Leadership \& Teamwork}
+
+	\textbf{Editor - E\textsuperscript{2} Club - USJ} \hfill \textit{2019 - 2021} \\ 
+	As the editor of  E\textsuperscript{2} Club, organized seminars, webinars, tech talks, technical workshops for USJ students.
+	
+	\textbf{Analysis of images from pan-STARRS} \hfill \textit{2019 - 2021} \\
+	Contributions to observations of near-Earth objects and main belt asteroids by participating in the analysis of images from pan-STARRS (The campaign was organized by IASC and NASA).
+
+	\textbf{SEDS Committee Member - USJ chapter} \hfill \textit{2019 - 2022} \\ 
+	Member of Students for the Exploration \& Development of Space (SEDS), Sri Lanka.
+
+	\textbf{“Sith Paura” Program - USJ} \hfill \textit{2019} \\
+	Volunteered for the “Sith Paura” program organized by Faculty of Engineering, USJ. The program supports students in underprivileged areas by conducting maths seminars for {O/L} and {A/L} as well as fundraisers for worthy causes such as building libraries.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Extra Curricular Activities}
+
+% 	\textbf{Member of University Badminton team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Taekwondo team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Media club} \hfill \textit{2014 - 2018}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+% 		Protocols \& APIs & XML, JSON, SOAP, REST \\
+% 		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+% 		Tools & SVN, Vim, Emacs
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

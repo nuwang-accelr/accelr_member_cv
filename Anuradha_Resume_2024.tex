@@ -1,0 +1,285 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{./assets/resume} % Use the resume class
+
+% \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{helvet}
+
+
+%------------------------------------------------
+
+\name{Anuradha Hettiarachchi} % Your name to appear at the top
+
+\phone{+94773166850}
+\linkedin{www.linkedin.com/in/v-anuradha}
+\email{sales@accelr.net}
+
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Email \\ sales@accelr.net} % Email
+
+\address{WhatsApp \\ +94 (0)773166850} % WhatsApp Number
+
+\address{Linkedin \\ https://www.linkedin.com/in/v-anuradha} % LinkedIn Profile
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% \begin{tabularx}{\textwidth}{
+% 	| >{\raggedright\arraybackslash}X 
+% 	| >{\raggedleft\arraybackslash}X | }
+% 	\hline
+% 	{\huge\bf Kasun Buddhi} \\
+% 	WhatsApp : Linkedin : Email
+	
+% 	& \raisebox{-\totalheight}{\includegraphics[width=0.3\textwidth]{logo.png}} \\
+% 	\hline
+% \end{tabularx} 
+
+% \begin{tabularx}{\textwidth}{ |X|X| } 
+% 	\hline
+% 	cell3 & \multirow{3}{5cm}{Multiple row} \\ 
+% 	cell6 &  \\ 
+% 	cell9 &  \\ 
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{
+% 	 	 >{\raggedright\arraybackslash}X 
+% 	 	 >{\raggedleft\arraybackslash}X  } 
+% 	\smallskip
+% 	{\huge\bf Kasun Buddhi} & 
+% 	\multirow[c]{3}{*}{{\includegraphics[width=0.25\textwidth]{logo.png}}}\\ 
+% 	WhatsApp : Linkedin : Email & \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\def\arraystretch{1.5}
+
+	\begin{tabular}{ l l}
+		\textbf{Expertise} & \emph{Parallel Computing, Machine Learning} \\
+		\textbf{Programming Languages} & \emph{C++, Python, C, CUDA} \\
+		\textbf{Tools and Frameworks} & \emph{PyTorch, ONNX, CUDA SDK} \\ 
+		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent} \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\textbf{Wayamba University of Sri Lanka} \hfill \textit{2013 - 2017} \\ 
+	B.Sc. Special in Applied Electronics \\
+	Overall GPA: 3.44/4.0 \\
+	Status: Second Upper
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsectionM}{ACCELR}{www.accelr.lk}{Lead Software Engineer}{Apr 2023 - Present}{Senior Software Engineer}{Aug 2019 - Apr 2023}{}{}
+        \item Mentor ACCELR team members on topics related to parallel computing and HPC.
+	\end{rSubsectionM}
+
+	\begin{rSubsectionX}{Analog Inference}{www.analog-inference.com}{Engineering Consultant}{Mar 2024 - Present}
+		\item Working on the model quantization feature for AI's next-gen front-end ML tools. This tool not only carries out parameter quantization (such as weights and bias) but also collects stats for individual layer input and outputs, which is subsequently used to derive the quantization parameters for layer inputs and outputs. The tool then generates a hardware compatible quantized model that be executed on hardware simulators as well as the actual hardware.
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{Quadric}{quadric.io}{Engineering Consultant}{Oct 2022 - Feb 2024}
+		\item Worked on developing a ML kernel library for the Quadric NPDPU using the Quadric SDK (C++). Implemented various custom-operator kernels required in machine learning models (such as patch-creation in ViT, corner-pool in corner-net and embedding in llama) as well as conventional image processing kernels (such as median-blur, canny-edge-detection and tonecurve). Analyzed profiling data of various kernels to identify the bottlenecks and introduced optimizations to increase the performance of those kernels.
+	\end{rSubsectionX}
+
+	\pagebreak
+
+	\begin{rSubsectionX}{Analog Inference}{www.analog-inference.com}{Engineering Consultant}{Sept 2019 - July 2022}
+		\item Worked on developing a hardware model using Python and PyTorch to validate and optimize the performance of neural networks running on Analog Inference’s ultra-low power analog chip. Carried out research on model quantization for various types of ML models with different quantization methods.
+	\end{rSubsectionX}
+    
+	\begin{rSubsectionX}{Wave Computing (Pvt) Ltd.}{www.wavecomp.ai}{Applications Engineer}{Dec 2018 - Aug 2019}
+        \item Designed, developed and tested kernels needed for inference workloads that runs on the Wave DPU using Wave C language. Designed and ran various tests for identifying hardware issues of Wave DPU using Veloce emulator. Automated some of above design flows with python and bash scripting.
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{Eimsky Business Solutions (Pvt) Ltd.}{www.eimsky.com}{Electronics Engineer}{Jan 2018 - Nov 2018}
+        \item Designed an advanced, reliable and multi-purpose IoT device for various IoT applications. Designed the circuit schematics and PCB design with Eagle and the firmware using NodeMCU. Features: 2 level built-in backup system, Connection management, battery and USB powered, Integrated OLED display.
+	\end{rSubsectionX}
+
+ 	\begin{rSubsectionX}{Millennium Information Technologies. SL}{www.millenniumit.com}{Intern - GPGPU Acceleration}{June 2017 - Dec 2017}
+        \item Studied about various parallel computing algorithms, implemented and tested them on different high performance Nvidia GPU devices with C++ and CUDA. Studied and experimented about GPU performance tuning with Nvidia Nsight Visual Profiler.
+	\end{rSubsectionX}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+	\textbf{Test smooth-quantization on ViT and LLAMA models} \\
+	Researched on the effects of using smooth-quantization for ViT and LLAMA models. Analyzed the results with ordinarily quantized model outputs to identify improvements in accuracy and the effect on performance.
+
+	\textbf{Research on model quantization} \\
+	Researched on different types of model quantization methods such as loss aware post-training quantization (LAPQ)and quantization aware training (QAT). Tested above methods with various ML model architectures such as ResNet, MobileNet, YOLO and FCN.
+
+	\textbf{CNN Kernel library for the WAVE DPU} \\
+	Contributed to development of a library of kernel primitives that would later be used to implement CNNs on the Wave DPU MIMD architecture. Developed the ReLU, PReLU, Add and Conv1x1 kernels and verified proper operation on actual DPU.
+
+	\textbf{Realtime face tracking system using FPGA} \\
+	A real-time system that is capable of detecting and tracking faces in an image stream captured by a camera.
+
+	\textbf{Heavy-duty continues shaking incubator for bacterial growth} \\
+	A device that is used for molecular plantation and bacterial growth. Capable of controlling shaking speed and temperature. (Requested by the Department of Biochemistry and Molecular Biology, Faculty of Medicine, University of Colombo).
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Publications}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Professional Affiliations}
+
+% 	\textbf{Institution of Engineers, Sri Lanka (IESL)} \hfill \textit{Since 2019} \\ 
+% 	Status : Student Member \\
+% 	Membership No.: S-26740
+
+% 	\textbf{IEEE} \hfill \textit{Since 2019} \\ 
+% 	Status : Student Member \\
+% 	% Membership No.: xxxxxxxx
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Achievement}
+
+	\textbf{1\textsuperscript{st} place - ASRITE 2017} \hfill \textit{2017} \\ 
+	Final year research project demonstration of B.Sc. Special degree program. Annual Symposium on Research and Industrial Training of Department of Electronics 2017.
+
+	\textbf{CHAMPIONS - SAITM Robotics Challenge} \hfill \textit{2015} \\ 
+	organized by SAITM Malabe Campus.
+
+	\textbf{CHAMPIONS - Technosoft} \hfill \textit{2015} \\ 
+	Robotics Application Development Competition Organized by Advanced Technological Institute Kurunegala.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{RESEARCH}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra Curricular Activities}
+
+	\textbf{President of the Electronics Society (E-soc), WUSL} \hfill \textit{2014 - 2015}
+
+	\textbf{Vice President of the Electronics Society (E-soc), WUSL} \hfill \textit{2013 - 2014}
+
+	\textbf{Member of Computer Society (ACISS), WUSL} \hfill \textit{2013 - 2017}
+
+\end{rSection}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+% 		Protocols \& APIs & XML, JSON, SOAP, REST \\
+% 		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+% 		Tools & SVN, Vim, Emacs
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,273 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{./assets/resume} % Use the resume class
+
+% \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{helvet}
+\usepackage{color, soul}
+
+
+%------------------------------------------------
+
+\name{Harshana Miyuranga} % Your name to appear at the top
+
+\phone{+94773166850}
+\linkedin{https://www.linkedin.com/in/harshana-miyuranga/}
+\email{sales@accelr.net}
+
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Email \\ sales@acceler.net} % Email
+
+\address{WhatsApp \\ +94 (0)77 3166 850} % WhatsApp Number
+
+\address{Linkedin \\ https://www.linkedin.com/in/harshana-miyuranga/} % LinkedIn Profile
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% \begin{tabularx}{\textwidth}{
+% 	| >{\raggedright\arraybackslash}X 
+% 	| >{\raggedleft\arraybackslash}X | }
+% 	\hline
+% 	{\huge\bf Kasun Buddhi} \\
+% 	WhatsApp : Linkedin : Email
+	
+% 	& \raisebox{-\totalheight}{\includegraphics[width=0.3\textwidth]{logo.png}} \\
+% 	\hline
+% \end{tabularx} 
+
+% \begin{tabularx}{\textwidth}{ |X|X| } 
+% 	\hline
+% 	cell3 & \multirow{3}{5cm}{Multiple row} \\ 
+% 	cell6 &  \\ 
+% 	cell9 &  \\ 
+% 	\hline
+% \end{tabularx}
+
+% \begin{tabularx}{\textwidth}{
+% 	 	 >{\raggedright\arraybackslash}X 
+% 	 	 >{\raggedleft\arraybackslash}X  } 
+% 	\smallskip
+% 	{\huge\bf Kasun Buddhi} & 
+% 	\multirow[c]{3}{*}{{\includegraphics[width=0.25\textwidth]{logo.png}}}\\ 
+% 	WhatsApp : Linkedin : Email & \\
+% \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\def\arraystretch{1.5}
+
+	\begin{tabular}{ l l}
+		\textbf{Expertise} & \emph{ML \& Deep Learning, Microservices, Cloud Computing} \\
+		\textbf{Programming Languages} & \emph{Python, Java, C\#, C++, JavaScript, PHP, Dart} \\
+		\textbf{Tools and Frameworks} & \emph{PyTorch, ONNX} \\ 
+		\textbf{Languages} & \emph{Sinhala-Native, English-Medium} \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\textbf{Sri Lanka Technological Campus} \hfill \textit{2016 - 2020} \\ 
+    B.Sc (Hons) in Electronic \& Power Systems Engineering \\
+	\hl{Overall GPA: ???/???} \\
+	\hl{Status: Second Upper ??? }
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Software Engineer}{Mar 2022 - Present}
+        \item \hl{add somthing here}
+	\end{rSubsectionX}
+
+	\begin{rSubsectionX}{ACCELR}{www.accelr.lk}{Engineering Consultant}{Mar 2022 - Present}
+		\item Member of the Analog Inference front-end tool development team
+        \item Developed tools to convert CNN models in ONNX format to an in-house graph format that can be consumed by the Analogue Inference back-end software tools. This includes refining operations such as Maxpool, Concat, VAdd, and various activation functions, ensuring they run effectively on the Analog Inference hardware.
+        \item Ported various CNN models to support the Analog Inferences hardware architecture, ensuring accuracy matches original models.
+        \item Modified existing neural network models by replacing unsupported PyTorch layers with supported operators while maintaining equivalent result.
+        \item Developed PyTorch operators and nn-blocks customized for AIs hardware.
+        \item Conducted experiments with various neural network models, such as ResNet, FCN and YOLO, to enhance their efficiency and accuracy on Analog Inference hardware.
+        \item Utilized Jenkins to manage nightly and weekly regression runs of the back-end and front-end tools. Enhanced the CI pipelines to automatically trigger regression runs whenever a pull request (PR) is under review.
+        \item Ensured that the codebase adheres to PEP8 standards and company-specific coding guidelines.
+	\end{rSubsectionX}
+
+    \pagebreak
+
+	\begin{rSubsectionX}{GPV LANKA}{gpv-group.com}{Junior NPI Engineer}{Dec 2021 - Feb 2022}
+		\item Document automation with Python. Generated CAD (excel) and VAF (word) files based on source CSV files.
+        \item Maintain engineering process discipline to achieve project deliverables, including manufacturing strategy, capability analysis, FMEA, tooling selection, cost modelling, DFM, and process validation/qualification 
+        \item Collaborate with engineers, managers, and wider development, manufacturing, purchasing teams etc.
+        \item Effectively balance innovation with new opportunities and current capabilities to meet quality standards
+	\end{rSubsectionX}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+	\textbf{Power line communication for home automation} \\
+	Done as the final year project for the B.Sc. degree. Data was transferred over existing AC power line by superimposing a high frequency FSK signal over the AC power signal. A PCB was designed and an application was developed with firebase to control over internet.
+
+    \textbf{Self-levelling quadcopter} \\
+    In this project a PID controller was used to balance the pitch and roll of the quadcopter drone. Application was developed using flutter to set the constants of PID controller to get the most stable parameters for self-levelling.
+
+	\textbf{Cloud base bank account management system} \\
+	Implementation of Banking system using micros services in a cloud environment.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Publications}
+
+% 	\normalfont{\textbf{D. Pathirage,}, X. XXXXX, A. AAAAA, "Multi-Prime RSA Verilog Implementation Using 4-Primes," \textit{2021 IEEE 30th International Conference on XXXXXXX (ICIAfS)}, Colombo, Sri Lanka, 2021, pp. 103-106.}(\href{https://ieeexplore.ieee.org/document/9605975}{paper})
+
+% 	\hl{D. Kumarathunga, \textbf{O. Gamage}, A. Samarasinghe, N. Saranga, R. Rodrigo and A. Pasqual, "VLIW Based Runtime Reconfigurable Machine Vision Coprocessor Architecture for Edge Computing," \textit{2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP)}, New York, NY, USA, 2019, pp. 103-106.}(\href{https://drive.google.com/open?id=166rtUrbnGk3XiRPDkxgzT3OWLazJaMRN}{paper})
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Affiliations}
+
+	\textbf{IEEE Sri Lanka Chapter} \hfill \hl{\textit{Since 20??}} \\ 
+	\hl{Status : Associate Member}
+	% Membership No.: AM-30835
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Certificates \& Achievements}
+
+	\textbf{Best Final Year Project Student Research Award - SLTC} \hfill \textit{2019}
+    Awarded for the project on "Home Automation Using Power Line Communication".
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP AND TEAMWORK
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Leadership \& Teamwork}
+
+	\textbf{Logistic Team Member - IEEE SL} \hfill \textit{2018 - 2019}
+
+	\textbf{Vice President - Student Interactive Society - SLTC} \hfill \textit{2017 - 2018}
+	
+	\textbf{Logistic Team Member, IEEE INSYS 2017} \hfill \textit{2017}
+
+	\hl{\textbf{Founder \& Senior Adviser of GETSYNC Club - SLTC} \hfill \textit{????}}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Extra Curricular Activities}
+
+% 	\textbf{Member of University Badminton team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Taekwondo team} \hfill \textit{2014 - 2018}
+
+% 	\textbf{Member of University Media club} \hfill \textit{2014 - 2018}
+
+% \end{rSection}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+% 		Protocols \& APIs & XML, JSON, SOAP, REST \\
+% 		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+% 		Tools & SVN, Vim, Emacs
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
