@@ -94,7 +94,7 @@
 		\textbf{Expertise} & \emph{RTL/Digital Design, Hardware Acceleration, Parallel Computing,} \\ 
 		& \emph{ML \& Deep Learning, Cloud Computing} \\
 		\textbf{Programming Languages} & \emph{C++, SystemVerilog, Python, Java, C\#} \\
-		\textbf{Tools and Frameworks} & \emph{Xilinx Vivado, Lattice Radiant, Matlab} \\ 
+		\textbf{Tools and Frameworks} & \emph{Xilinx Vivado, Lattice Radiant, OpenRoad} \\ 
 		\textbf{Languages} & \emph{Sinhala-Native, English-Excellent} \\
 	\end{tabular}
 
@@ -106,7 +106,7 @@
 
 \begin{rSection}{Education}
 
-	\textbf{IIT, Sri Lanka} \hfill \textit{\hl{2021 - Present}} \\ 
+	\textbf{IIT, Sri Lanka} \hfill \textit{2021 - Present} \\ 
 	M.Sc. in Advanced Software Engineering \\
 	University of Westminster \\
 	% Member of Eta Kappa Nu \\
@@ -116,8 +116,8 @@
 
 	\textbf{Sri Lanka Technological Campus} \hfill \textit{2016 - 2020} \\ 
     B.Sc (Hons) in Electronic \& Telecommunication Engineering \\
-	\hl{Overall GPA: ???/???} \\
-	\hl{Status: Second Upper ??? }
+	% \hl{Overall GPA: 2.9} \\
+	% \hl{Status: Second Upper ??? }
 	
 	
 \end{rSection}
@@ -129,10 +129,13 @@
 \begin{rSection}{Experience}
 
 	\begin{rSubsectionM}{ACCELR}{www.accelr.lk}{Senior Software Engineer}{Apr 2023 - Present}{Software Engineer}{Jan 2023 - Present}{}{}
-        \item Mentor ACCELR team members on topics related to parallel computing and HPC. \hl{add somthing}
+        \item Mentor ACCELR team members on topics related to parallel computing and HPC.
+        \item RTL Training: Mentor trainees in the RTL design and verification (SystemVerilog).
+        \item RISC-V working-group: Actively involved in research tasks focusing on RISC-V architecture.
+		\item Knowledge Sharing: Conducted knowledge-sharing sessions for University students on digital design with verilog to in order to foster better relationships with local Universities.
 	\end{rSubsectionM}
 
-	\begin{rSubsectionX}{Analog Inference}{www.analog-inference.com}{Engineering Consultant}{Nov 2022 - Present}
+	\begin{rSubsectionX}{Analog Inference}{www.analog-inference.com}{Engineering Consultant}{Dec 2020 - Present}
 		\item Member of the Analog Inference back-end software development team
 		\item Responsible for the development an mapping tool capable of automatically mapping a given neural network on to the Analog Inference data flow accelerator chip. Carried out experiments with new mapping policies and algorithms to optimize space utilization and performance.
 		\item Managed the development, testing, and maintenance of the automated mapper tool and its test regression suite.
@@ -145,7 +148,7 @@
 		\item Performed performance analysis using ARM Development Studio for YOLOv5, identifying key areas for improvement in the host side software stack.
 	\end{rSubsectionX}
 
-	\begin{rSubsectionX}{Paraqum Technologies}{paraqum.com}{Intern}{Dec 2022 - Present}
+	\begin{rSubsectionX}{Paraqum Technologies}{paraqum.com}{Intern}{Feb 2018 - Aug 2018}
 		\item Developed a Slack messaging bot and an email verification system for Gmail using C++ with CURL, enhancing communication efficiencies.
 		\item Automated SMS delivery using a GSM modem in C++, streamlining the messaging process.
 		\item Engineered hardware accelerators for DDR memory read/write operations in Verilog and C++ (High-Level Synthesis), boosting system performance.
@@ -162,12 +165,13 @@
 \begin{rSection}{Projects}
 
 	\textbf{Hardware Acceleration of OpenSSL Crypto Functions using FPGAs} \\
-	Improved SSL/TLS connection performance with AES \& RSA implementations.
-	\hl {need more details}
+	This project focused on improving the SSL/TLS connection performance by accelerating parts of the AES and RSA algorithms to FPGA. The project utilized multi-prime RSA with four primes for th hardware implementation. While not focusing on random prime number generation, which can be externally computed and sent to the FPGA via the PCIe port, the implementation concentrated on RSA key generation and decryption. The approach used a constant public exponent value of 65537, consistent with OpenSSL standards, and employed different 'n' and 'd' private key values for each RSA channel.
 
 	\textbf{Cloud base bank account management system} \\
-	Built and deployed a bank account management system, AWS CDK, AWS S3, AWS Cloud front, CI/CD with AWS CodePipleine
-	\hl {need more details}
+	Built and deployed a bank account management system, AWS CDK, AWS S3, AWS Cloud front, CI/CD with AWS CodePipleine.
+
+	\textbf{Java Multi-threaded Booking and Renting System for Tourists} \\
+	Developed a robust Java multi-threaded application designed to handle high availability for booking and renting systems tailored for tourists. The project leveraged advanced monitoring concepts using the Runnable interface to ensure optimal performance and reliability. Deployed in the AWS Cloud, the system utilized a distributed architecture and microservices to ensure scalability and fault tolerance. This setup provided a seamless and efficient user experience, capable of handling concurrent requests and maintaining system integrity under heavy load.
 
 \end{rSection}
 
@@ -187,17 +191,9 @@
 
 \begin{rSection}{Publications}
 
-	\normalfont{\textbf{D. Pathirage,}, X. XXXXX, A. AAAAA, "Multi-Prime RSA Verilog Implementation Using 4-Primes," \textit{2021 IEEE 30th International Conference on XXXXXXX (ICIAfS)}, Colombo, Sri Lanka, 2021, pp. 103-106.}(\href{https://ieeexplore.ieee.org/document/9605975}{paper})
-
-	\hl{D. Kumarathunga, \textbf{O. Gamage}, A. Samarasinghe, N. Saranga, R. Rodrigo and A. Pasqual, "VLIW Based Runtime Reconfigurable Machine Vision Coprocessor Architecture for Edge Computing," \textit{2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP)}, New York, NY, USA, 2019, pp. 103-106.}(\href{https://drive.google.com/open?id=166rtUrbnGk3XiRPDkxgzT3OWLazJaMRN}{paper})
+	\normalfont{\textbf{D. Pathirage,}, H.P.D.K. Wijewardana, L.A.S. Lakshan, Hassaan Hydher, Lasith Yasakethu, "Multi-Prime RSA Verilog Implementation Using 4-Primes," \textit{2021 IEEE 30th International Conference on Information and Automation for Sustainability (ICIAfS)}, Colombo, Sri Lanka, 2021}(\href{https://ieeexplore.ieee.org/document/9605975}{paper})
 
 \end{rSection}
-
-\begin{rSection}{Publications}
-
-
-	
-	\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL AFFILIATIONS
@@ -205,8 +201,8 @@
 
 \begin{rSection}{Professional Affiliations}
 
-	\textbf{IEEE Sri Lanka Chapter} \hfill \hl{\textit{Since 20??}} \\ 
-	\hl{Status : Associate Member}
+	\textbf{IEEE Sri Lanka Chapter} \hfill \textit{Since 2018} \\ 
+	Status : Associate Member
 	% Membership No.: AM-30835
 
 \end{rSection}
@@ -217,29 +213,29 @@
 
 \begin{rSection}{Certificates \& Achievements}
 
-	\textbf{Undergraduate Contribution to the University Enhancement - SLTC RAIN} \hfill \textit{2019}
+	% \textbf{Undergraduate Contribution to the University Enhancement - SLTC RAIN} \hfill \textit{2019}
 
 	\textbf{RISC-V Foundational Associate (RVFA) - Linux Foundation} \hfill \textit{Ongoing}
 
-	\textbf{SystemVerilog for ASIC/FPGA Design \& Verification - University of Moratuwa} \hfill \hl{\textit{????}}
+	\textbf{SystemVerilog for ASIC/FPGA Design \& Verification - University of Moratuwa} \hfill \textit{2023}
 
-	\textbf{VSD - Intelligent Assessment Technology} \hfill \hl{\textit{????}}
+	\textbf{VSD - VLSI System Design (VSD-IAT)} \hfill \textit{2023}
 	
-	\textbf{Complete Modern C++ (C++11/14/17) - Udemy} \hfill \hl{\textit{????}}
+	\textbf{Complete Modern C++ (C++11/14/17) - Udemy} \hfill \textit{2021}
 
-	\textbf{Machine Learning - Stanford University - Coursera} \hfill \hl{\textit{????}}
+	\textbf{Machine Learning - Stanford University - Coursera} \hfill \textit{2021}
 
-	\textbf{Cryptography and Information Theory - University of Colorado - Coursera} \hfill \hl{\textit{????}}
+	\textbf{Cryptography and Information Theory - University of Colorado - Coursera} \hfill \textit{2020}
 
-	\textbf{Cloud Engineering with Google Cloud - Google Cloud - Coursera} \hfill \hl{\textit{????}}
+	\textbf{Cloud Engineering with Google Cloud - Google Cloud - Coursera} \hfill \textit{2020}
 
-	\textbf{NDG Linux Unhatched - Cisco Networking Academy} \hfill \hl{\textit{????}}
+	\textbf{NDG Linux Unhatched - Cisco Networking Academy} \hfill \textit{2020}
 
-	\textbf{AWS Cloud Practitioner Essentials - Amazon Web Services (AWS)} \hfill \hl{\textit{????}}
+	\textbf{AWS Cloud Practitioner Essentials - Amazon Web Services (AWS)} \hfill \textit{2020}
 
-	\textbf{FPGA Programming with VHDL - Pluralsight} \hfill \hl{\textit{????}}
+	\textbf{FPGA Programming with VHDL - Pluralsight} \hfill \textit{2020}
 	
-	\textbf{SSL/TLS Protocol and Handshake Process - Udemy} \hfill \hl{\textit{????}}
+	\textbf{SSL/TLS Protocol and Handshake Process - Udemy} \hfill \textit{2020}
 
 \end{rSection}
 
@@ -261,9 +257,9 @@
 
 	\textbf{Student Ambassador, IEEE MadC} \hfill \textit{2019}
 
-	\hl{\textbf{Advisor IES SLTC} \hfill \textit{20xx??}}
+	\textbf{Advisor IES SLTC} \hfill \textit{2020}
 
-	\hl{\textbf{Director, LEO Club of SLTC} \hfill \textit{2017 - 2018}}
+	\textbf{Director, LEO Club of SLTC} \hfill \textit{2017 - 2018}
 
 \end{rSection}
 
