@@ -80,6 +80,7 @@
 \newcommand{\phone}[1]{\renewcommand{\phone}{#1}} % Defines the \name command to set the user's name
 
 \newcommand{\linkedin}[1]{\renewcommand{\linkedin}{#1}} % Defines the \name command to set the user's name
+%&\newcommand{\linkedin}[1]{\renewcommand{\linkedin}{}} % Defines the \name command to set the user's name
 
 \newcommand{\email}[1]{\renewcommand{\email}{#1}} % Defines the \name command to set the user's name
 
@@ -147,9 +148,9 @@
 
 \newcommand{\printcontactX}{
 	\begin{tabular}{ l c l}
-		Phone & : & \phone \\
+		WhatsApp & : & \phone \\
 		Email & : & \href{mailto:\email}{\email} \\
-		LinkedIn & : & \href{\linkedin}{\linkedin} \\ 
+		% LinkedIn & : & \href{\linkedin}{\linkedin} \\ 
 	\end{tabular}
 }
 
